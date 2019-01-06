@@ -1,0 +1,30 @@
+{
+    "name": "wasatch-forge",
+    "version": "1.0.0",
+    "description": "Built with Nuxt.js",
+    "author": "Luke Jensen",
+    "private": true,
+    "scripts": {
+        "dev": "nuxt",
+        "build": "nuxt build",
+        "start": "nuxt start",
+        "generate": "nuxt generate",
+        "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+        "lintfix": "eslint --fix --ext .js,.vue src",
+        "precommit": "npm run lint"
+    },
+    "dependencies": {
+        "@nuxtjs/axios": "^5.0.0",
+        "cross-env": "^5.2.0",
+        "node-sass": "^4.11.0",
+        "nuxt": "^2.0.0",
+        "sass-loader": "^7.1.0"
+    },
+    "devDependencies": {
+        "babel-eslint": "^8.2.1",
+        "eslint": "^5.0.1",
+        "eslint-loader": "^2.0.0",
+        "eslint-plugin-vue": "^4.0.0",
+        "nodemon": "^1.11.0"
+    }
+}

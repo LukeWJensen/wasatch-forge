@@ -1,0 +1,12 @@
+@function strip-units($number) {
+    @return $number / ($number * 0 + 1);
+}
+
+@function viewport-scale($value, $unitless: false) {
+    $pxValue: if(unit($value) == 'em' or unit($value) == 'rem', $value * $base-font-size, $value);
+    $percentage: strip-units($pxValue / $max-width) * 100vw;
+    $unitlessPerc: strip-units($pxValue / $max-width) * 100;
+    $finalValue: if($unitless == true, $unitlessPerc, $percentage);
+
+    @return $finalValue;
+}

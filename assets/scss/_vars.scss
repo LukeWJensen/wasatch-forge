@@ -1,0 +1,43 @@
+@import "bootstrap/variables";
+
+//----------------------------------------------
+// Grid
+//----------------------------------------------
+$screen-sm : map-get($grid-breakpoints, 'sm');
+$screen-sm-min : $screen-sm;
+
+$screen-md : map-get($grid-breakpoints, 'md');
+$screen-md-min : $screen-md;
+
+$screen-lg : map-get($grid-breakpoints, 'lg');
+$screen-lg-min : $screen-lg;
+
+$screen-xl : map-get($grid-breakpoints, 'xl');
+$screen-xl-min : $screen-xl;
+
+$screen-xs-max : ($screen-sm-min);
+$screen-sm-max : ($screen-md-min - 1);
+$screen-md-max : ($screen-lg-min - 1);
+$screen-lg-max : ($screen-xl-min - 1);
+
+//----------------------------------------------
+// Colors
+//----------------------------------------------
+$color-text-main : #4E4E56;
+$color-text-light : #ddd4cc;
+$color-molten : #ec551c;
+$color-orange : #f98713;
+$color-bg : #231f20;
+
+//----------------------------------------------
+// Easing
+//----------------------------------------------
+$cubic-in-out : cubic-bezier(0.655, 0.000, 0.355, 1.000);
+$cubic-in : cubic-bezier(0.55, 0.055, 0.675, 0.19);
+$cubic-out : cubic-bezier(0.215, 0.61, 0.355, 1);
+
+//----------------------------------------------
+// Dimensions
+//----------------------------------------------
+$header-height: 105px;
+$footer-height: 35px;
