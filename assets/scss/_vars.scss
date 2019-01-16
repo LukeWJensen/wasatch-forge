@@ -27,7 +27,9 @@ $color-text-main : #4E4E56;
 $color-text-light : #ddd4cc;
 $color-molten : #ec551c;
 $color-orange : #f98713;
-$color-bg : #231f20;
+$color-bg-dark : #231f20;
+$color-bg-mid : #ddd4cc;
+$color-bg-light : #faf7f7;
 
 //----------------------------------------------
 // Easing
@@ -39,5 +41,5 @@ $cubic-out : cubic-bezier(0.215, 0.61, 0.355, 1);
 //----------------------------------------------
 // Dimensions
 //----------------------------------------------
-$header-height: 105px;
-$footer-height: 35px;
+$header-height: 150px;
+$footer-height: 65px;

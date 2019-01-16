@@ -10,6 +10,7 @@
     import BackgroundVideo from '~/components/BackgroundVideo'
 
     export default {
+        layout: 'home',
         components: {
             BackgroundVideo
         },

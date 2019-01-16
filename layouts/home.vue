@@ -2,7 +2,9 @@
     <div id="app">
         <div class="page-container">
             <Header/>
-            <nuxt/>
+            <div class="main-content">
+                <nuxt/>
+            </div>
             <Footer/>
         </div>
     </div>
@@ -18,9 +20,11 @@
 
 <style lang="scss" scoped>
     @import '../assets/scss/the-goods';
-
     .page-container {
-        background: $color-bg-mid;
-        min-height : 100vh;
+        min-height: 100vh;
+    }
+
+    .main-content {
+        min-height: calc(100vh - #{$header-height} - #{$footer-height});
     }
 </style>

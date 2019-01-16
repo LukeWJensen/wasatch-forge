@@ -1,7 +1,7 @@
 <template>
     <footer class="main-footer">
         <div class="container">
-            <ul class="footer-items">
+            <ul class="footer-items barlow">
                 <li class="footer-item">
                     <a target="_blank" href="tel:801-808-2897">
                         <!-- eslint-disable -->
@@ -59,9 +59,9 @@
     @import '../assets/scss/the-goods';
 
     .main-footer {
-        background : $color-bg;
+        background : linear-gradient(rgba(0, 0 ,0, 0.1), rgba(0, 0 ,0, 1));
         height     : $footer-height;
-        padding    : 0.6rem 0 0 0;
+        padding    : 2.5rem 0 0 0;
         position   : relative;
         z-index    : 1;
 
