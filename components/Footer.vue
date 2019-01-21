@@ -59,7 +59,7 @@
     @import '../assets/scss/the-goods';
 
     .main-footer {
-        background : linear-gradient(rgba(0, 0 ,0, 0.1), rgba(0, 0 ,0, 1));
+        background : linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1));
         height     : $footer-height;
         padding    : 2.5rem 0 0 0;
         position   : relative;
@@ -84,9 +84,10 @@
     }
 
     .footer-item {
-        display      : flex;
-        align-items  : center;
-        margin-right : 1.8rem;
+        align-items    : center;
+        display        : flex;
+        letter-spacing : 0.05em;
+        margin-right   : 1.8rem;
 
         svg {
             max-height   : 1.8rem;
