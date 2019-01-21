@@ -74,7 +74,10 @@
     @import "../../assets/scss/the-goods";
 
     .main-nav-item--subnav {
+
         &.main-nav-item {
+            margin : 1.5rem 3rem 0 2.5rem;
+
             &:hover {
                 cursor : default;
             }
@@ -109,6 +112,9 @@
         &-arrow {
             font-size   : 1.2rem;
             font-weight : bolder;
+            position    : absolute;
+            right       : -1.8rem;
+            bottom      : 0.7rem;
         }
     }
 </style>
