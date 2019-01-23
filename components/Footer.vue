@@ -44,6 +44,7 @@
                 </li>
             </ul>
             <button
+                v-if="$nuxt.$route.name === 'index'"
                 :class="[{
                     'video-mute-btn--muted': $store.state.homeVideo.muted
                 }]"
