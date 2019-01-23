@@ -1,0 +1,9 @@
+@import "the-goods";
+
+.fade-enter-active, .fade-leave-active {
+    transition : opacity 250ms $cubic-out;
+}
+
+.fade-enter, .fade-leave-to {
+    opacity : 0;
+}

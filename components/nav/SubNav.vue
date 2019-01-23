@@ -114,7 +114,7 @@
             font-weight : bolder;
             position    : absolute;
             right       : -1.8rem;
-            bottom      : 0.7rem;
+            bottom      : 0.8rem;
         }
     }
 </style>

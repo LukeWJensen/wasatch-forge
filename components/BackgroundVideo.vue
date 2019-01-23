@@ -8,7 +8,7 @@
         <video
             ref="video"
             :class="{'show' : videoLoaded}"
-            muted
+            :muted="$store.state.homeVideo.muted"
             loop
             playsinline
         >
