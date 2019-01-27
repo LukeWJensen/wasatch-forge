@@ -17,9 +17,9 @@ html {
 }
 
 body {
-    font-size : 1.5rem;
-    overflow  : hidden;
-    font-family: 'Open Sans', 'sans-serif';
+    font-size   : 1.5rem;
+    overflow    : hidden;
+    font-family : 'Open Sans', 'sans-serif';
 
     @include screen-xs-sm-md {
         overflow-x : hidden;
@@ -33,6 +33,18 @@ body {
     margin     : 0;
 }
 
+a, button {
+
+    &:focus {
+        outline : none;
+    }
+
+    &:hover {
+        cursor          : pointer;
+        text-decoration : none;
+    }
+}
+
 a {
-    transition: color 250ms $cubic-out;
+    transition : color 250ms $cubic-out;
 }

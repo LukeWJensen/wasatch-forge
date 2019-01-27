@@ -34,7 +34,9 @@ module.exports = {
     /*
     ** Plugins to load before mounting the App
     */
-    plugins: [],
+    plugins: [
+        '~/plugins/global_listeners.js',
+    ],
 
     /*
     ** Nuxt.js modules

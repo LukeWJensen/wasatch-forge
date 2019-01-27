@@ -14,7 +14,7 @@
         <nuxt-link :to="to" class="main-nav-link">
             <span class="main-nav-item-text">{{ text }}</span>
         </nuxt-link>
-        <span v-if="!highlight" class="main-nav-item-line"></span>
+        <span v-if="!highlight" class="main-nav-item-line"/>
     </li>
 </template>
 

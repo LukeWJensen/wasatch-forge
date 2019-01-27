@@ -1,6 +1,7 @@
 <template>
     <header class="main-header copperplate">
         <div class="main-header-inner container">
+
             <nuxt-link class="header-logo header-logo--variant" to="/">
                 <!-- eslint-disable -->
                 <svg class="header-logo-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 2868.2 1318.1" xml:space="preserve">
@@ -108,19 +109,42 @@
                 <!-- eslint-enable -->
                 <span class="header-logo-text">Wasatch <span>Forge</span></span>
             </nuxt-link>
-            <Nav/>
+
+            <Nav v-if="navActive"/>
+
+            <button
+                v-if="!navActive"
+                class="nav-drawer-open"
+                @click="handleOpenClick"
+            >
+                <span class="nav-drawer-open-line nav-drawer-open-line--top"/>
+                <span class="nav-drawer-open-line nav-drawer-open-line--mid"/>
+                <span class="nav-drawer-open-line nav-drawer-open-line--bot"/>
+            </button>
+
         </div>
     </header>
 </template>
 
 <script>
     import Nav from '~/components/nav/Nav'
+    import NavDrawer from '~/components/nav/NavDrawer'
 
     export default {
         name: 'Header',
-        components: { Nav },
+        components: { Nav, NavDrawer },
         data () {
             return {}
+        },
+        computed: {
+            navActive () {
+                return this.$store.state.size.deviceSize === 'lg' || this.$store.state.size.deviceSize === 'xl'
+            }
+        },
+        methods: {
+            handleOpenClick () {
+                this.$store.dispatch('nav/setDrawerOpen', true)
+            }
         }
     }
 </script>
@@ -138,6 +162,7 @@
         &-inner {
             display         : flex;
             justify-content : space-between;
+            position        : relative;
         }
     }
 
@@ -182,6 +207,25 @@
             span {
                 font-weight : 900;
             }
+        }
+    }
+
+    .nav-drawer-open {
+        background         : transparent;
+        border             : 0;
+        display            : flex;
+        flex-direction     : column;
+        height             : 3rem;
+        justify-content    : space-between;
+        outline            : none;
+        padding            : 0;
+        -webkit-appearance : none;
+
+        &-line {
+            background : $color-text-light;
+            display    : inline-flex;
+            height     : 0.5rem;
+            width      : 3.6rem;
         }
     }
 </style>
