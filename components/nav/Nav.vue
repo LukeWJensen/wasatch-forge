@@ -1,17 +1,17 @@
 <template>
     <nav class="main-nav">
         <ul class="main-nav-links barlow">
-            <NavItem
-                text="Book Lessons"
-                to="/book-lessons"
-                highlight
-            />
             <SubNav text="About">
                 <SubNavItem text="Our History" to="/history"/>
                 <SubNavItem text="The Blacksmiths" to="/blacksmiths"/>
             </SubNav>
             <NavItem text="Products" to="/products"/>
             <NavItem text="Contact" to="/contact"/>
+            <NavItem
+                text="Book Lessons"
+                to="/book-lessons"
+                highlight
+            />
         </ul>
     </nav>
 </template>
@@ -41,16 +41,19 @@
 <style lang="scss">
     @import "../../assets/scss/the-goods";
 
-    .main-nav {}
+    .main-nav {
+        width : 100%;
+    }
 
     .main-nav-links {
         display : flex;
+        padding : 0;
     }
 
     .main-nav-item {
-        color          : $color-text-light;
+        color          : $color-text-main;
         list-style     : none;
-        font-size      : 2rem;
+        font-size      : 1.6rem;
         font-weight    : 700;
         padding        : 0.5rem 0;
         position       : relative;
@@ -62,14 +65,18 @@
             border-radius : 0.2rem;
             padding       : 0.4rem 1rem 0.6rem 1rem;
             transition    : color 250ms $cubic-in-out, background-color 250ms $cubic-in-out;
+            margin-left   : auto;
 
             &:hover {
-                background-color : $color-text-light;
-                color            : $color-text-main;
+                background-color : $color-text-main;
 
                 a {
                     color : $color-text-main;
                 }
+            }
+
+            a.main-nav-link {
+                color : $color-off-white;
             }
         }
 
@@ -135,7 +142,7 @@
         }
 
         a {
-            color : $color-text-light;
+            color : $color-text-main;
 
             &:hover {
                 text-decoration : none;

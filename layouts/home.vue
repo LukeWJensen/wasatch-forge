@@ -31,7 +31,5 @@
         min-height: 100vh;
     }
 
-    .main-content {
-        min-height: calc(100vh - #{$header-height} - #{$footer-height});
-    }
+    .main-content {}
 </style>

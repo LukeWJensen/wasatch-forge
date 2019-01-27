@@ -1,6 +1,6 @@
 <template>
-    <div class="container">
-        <div class="home">
+    <div class="home">
+        <div class="hero">
             <BackgroundVideo :poster-src="posterSrc" :vid-src="vidSrc"/>
         </div>
     </div>
@@ -26,4 +26,10 @@
 </script>
 
 <style lang="scss">
+    @import "../assets/scss/the-goods";
+
+    .hero {
+        position: relative;
+        height: calc(100vh - #{$header-height});
+    }
 </style>

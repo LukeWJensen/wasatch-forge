@@ -50,7 +50,7 @@
     @import "../../assets/scss/the-goods";
 
     .nav-drawer {
-        background : $color-text-light;
+        background : $color-off-white;
         height     : 100vh;
         padding    : 4.6rem 2.8rem;
         position   : fixed;

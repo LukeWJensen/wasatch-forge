@@ -29,7 +29,7 @@
     .page-content {
         margin     : 25vh auto 0 auto;
         position   : relative;
-        background : $color-bg-light;
+        background : $color-off-white;
         min-height: 60vh;
         padding    : 5.5rem 10rem;
         z-index    : 1;

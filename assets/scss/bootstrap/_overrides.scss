@@ -2,11 +2,11 @@
 //  Override Bootstrap vars in a separate file for future-proofing
 //----------------------------------------------------------------
 $grid-breakpoints : (
-  xs: 0,
-  sm: 576px,
-  md: 768px,
-  lg: 1024px, // changed from 992px
-  xl: 1300px // changed from 1200px
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 1024px, // changed from 992px
+    xl: 1300px // changed from 1200px
 ) !default;
 
 $container-max-widths: (

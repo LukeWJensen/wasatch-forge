@@ -104,17 +104,18 @@
         }
 
         &-inner {
-            background    : $color-text-light;
+            background    : $color-off-white;
             border-radius : 0.2rem;
             padding       : 1rem 0;
         }
 
         &-arrow {
-            font-size   : 1.2rem;
-            font-weight : bolder;
-            position    : absolute;
-            right       : -1.8rem;
-            bottom      : 0.8rem;
+            font-size    : 1rem;
+            font-weight  : bolder;
+            padding-left : 1rem;
+            position     : absolute;
+            right        : -1.6rem;
+            bottom       : 0.7rem;
         }
     }
 </style>
