@@ -1,17 +1,19 @@
 <template>
     <div class="home">
-        <div class="hero">
+        <Hero heading="Wasatch Forge">
             <BackgroundVideo :poster-src="posterSrc" :vid-src="vidSrc"/>
-        </div>
+        </Hero>
     </div>
 </template>
 
 <script>
+    import Hero from '~/components/Hero'
     import BackgroundVideo from '~/components/BackgroundVideo'
 
     export default {
         layout: 'home',
         components: {
+            Hero,
             BackgroundVideo
         },
         computed: {
@@ -27,9 +29,4 @@
 
 <style lang="scss">
     @import "../assets/scss/the-goods";
-
-    .hero {
-        position: relative;
-        height: calc(100vh - #{$header-height});
-    }
 </style>

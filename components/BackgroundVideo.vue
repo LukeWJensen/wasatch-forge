@@ -14,7 +14,7 @@
         >
             <source :src="vidSrc" type="video/mp4">
         </video>
-        <span class="hero-text">Wasatch Forge</span>
+
         <div class="background-video-ctrls container">
             <button
                 v-if="$nuxt.$route.name === 'index'"
@@ -103,22 +103,6 @@
 
 <style lang="scss">
     @import "../assets/scss/_the-goods";
-
-    .hero-text {
-        display: none;
-        position       : absolute;
-        top            : 40%;
-        left           : 50%;
-        transform      : translate(-50%, -50%);
-        font-size      : 7rem;
-        font-weight: 300;
-        max-width      : 500px;
-        color          : $color-text-light;
-        font-family    : Copperplate, serif;
-        text-align     : center;
-        line-height    : 7rem;
-        text-transform : uppercase;
-    }
 
     .background-video {
         z-index : 0;

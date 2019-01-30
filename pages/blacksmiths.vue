@@ -1,6 +1,6 @@
 <template>
     <div class="page-book-lessons">
-        <Hero heading="Products" align="left">
+        <Hero heading="The Blacksmiths" align="left">
             <BackgroundImage :img-src="heroImgSrc" :tint="false"/>
         </Hero>
         <div class="container">
@@ -22,7 +22,7 @@
         },
         computed: {
             heroImgSrc () {
-                return require('~/assets/images/hero/hooks.jpg')
+                return require('~/assets/images/hero/forge.jpg')
             }
         }
     }
