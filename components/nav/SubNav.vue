@@ -76,7 +76,6 @@
     .main-nav-item--subnav {
 
         &.main-nav-item {
-            margin : 1.5rem 3rem 0 2.5rem;
 
             &:hover {
                 cursor : default;
@@ -104,9 +103,10 @@
         }
 
         &-inner {
-            background    : $color-off-white;
+            background    : $color-off-black;
             border-radius : 0.2rem;
             padding       : 1rem 0;
+            box-shadow: 2px 2px 8px 2px rgba(0,0,0,0.1);
         }
 
         &-arrow {

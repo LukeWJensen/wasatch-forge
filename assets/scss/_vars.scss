@@ -23,13 +23,13 @@ $screen-lg-max : ($screen-xl-min - 1);
 //----------------------------------------------
 // Colors
 //----------------------------------------------
-$color-text-main : #4E4E56;
+$color-off-black : #222;
+$color-off-white : #fafafa;
+$color-grey : #999;
 $color-text-light : hsla(29, 20%, 84%, 1.00);
-$color-molten : #ec551c;
-$color-orange : #f98713;
+$color-molten : #FF7931;
 $color-bg-dark : #231f20;
 $color-bg-mid : #ddd4cc;
-$color-off-white : #faf7f7;
 
 //----------------------------------------------
 // Easing
@@ -41,5 +41,5 @@ $cubic-out : cubic-bezier(0.215, 0.61, 0.355, 1);
 //----------------------------------------------
 // Dimensions
 //----------------------------------------------
-$header-height: 13.5rem;
-$footer-height: 6.5rem;
+$header-height : 13.5rem;
+$footer-height : 6.5rem;

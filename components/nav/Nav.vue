@@ -26,14 +26,6 @@
         components: { NavItem, SubNav, SubNavItem },
         data () {
             return {}
-        },
-        methods: {
-            handleMouseOver (e) {
-                console.log(e.target)
-            },
-            handleMouseLeave (e) {
-                console.log(e.target)
-            }
         }
     }
 </script>
@@ -46,32 +38,38 @@
     }
 
     .main-nav-links {
-        display : flex;
-        padding : 0;
+        align-items : center;
+        display     : flex;
+        margin      : 0;
+        padding     : 0;
     }
 
     .main-nav-item {
-        color          : $color-text-main;
+        align-items    : center;
+        color          : $color-off-black;
+        display        : flex;
         list-style     : none;
         font-size      : 1.6rem;
         font-weight    : 700;
+        height         : 3.6rem;
         padding        : 0.5rem 0;
         position       : relative;
-        margin         : 1.5rem 1.5rem 0 2.5rem;
+        margin         : 0 1.5rem 0 2.5rem;
         text-transform : uppercase;
 
         &--highlight {
             background    : $color-molten;
-            border-radius : 0.2rem;
-            padding       : 0.4rem 1rem 0.6rem 1rem;
+            border-radius : 0.5rem;
+            height        : auto;
+            padding       : 1rem 2rem;
             transition    : color 250ms $cubic-in-out, background-color 250ms $cubic-in-out;
             margin-left   : auto;
 
             &:hover {
-                background-color : $color-text-main;
+                background-color : $color-off-black;
 
                 a {
-                    color : $color-text-main;
+                    color : $color-off-black;
                 }
             }
 
@@ -142,7 +140,7 @@
         }
 
         a {
-            color : $color-text-main;
+            color : $color-off-black;
 
             &:hover {
                 text-decoration : none;

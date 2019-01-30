@@ -85,7 +85,7 @@
             width       : 2rem;
 
             &:before, &:after {
-                background : $color-text-main;
+                background : $color-off-black;
                 content    : '';
                 height     : 100%;
                 left       : 50%;

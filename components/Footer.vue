@@ -1,55 +1,58 @@
 <template>
-    <footer class="main-footer">
+    <footer class="main-footer barlow">
         <div class="main-footer-inner container">
-            <ul class="footer-items barlow">
-                <li class="footer-item">
-                    <a target="_blank" href="tel:801-808-2897">
-                        <!-- eslint-disable -->
-                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="28" viewBox="0 0 22 28">
-                            <path fill="#ddd4cc"
-                                  d="M22 19.375c0 0.562-0.25 1.656-0.484 2.172-0.328 0.766-1.203 1.266-1.906 1.656-0.922 0.5-1.859 0.797-2.906 0.797-1.453 0-2.766-0.594-4.094-1.078-0.953-0.344-1.875-0.766-2.734-1.297-2.656-1.641-5.859-4.844-7.5-7.5-0.531-0.859-0.953-1.781-1.297-2.734-0.484-1.328-1.078-2.641-1.078-4.094 0-1.047 0.297-1.984 0.797-2.906 0.391-0.703 0.891-1.578 1.656-1.906 0.516-0.234 1.609-0.484 2.172-0.484 0.109 0 0.219 0 0.328 0.047 0.328 0.109 0.672 0.875 0.828 1.188 0.5 0.891 0.984 1.797 1.5 2.672 0.25 0.406 0.719 0.906 0.719 1.391 0 0.953-2.828 2.344-2.828 3.187 0 0.422 0.391 0.969 0.609 1.344 1.578 2.844 3.547 4.813 6.391 6.391 0.375 0.219 0.922 0.609 1.344 0.609 0.844 0 2.234-2.828 3.187-2.828 0.484 0 0.984 0.469 1.391 0.719 0.875 0.516 1.781 1 2.672 1.5 0.313 0.156 1.078 0.5 1.188 0.828 0.047 0.109 0.047 0.219 0.047 0.328z"
-                            ></path>
-                        </svg>
-                        <!-- eslint-enable -->
-                        <span>801-808-2897</span>
-                    </a>
-                </li>
-                <li class="footer-item">
-                    <a target="_blank" href="mailto:wasatchforge@gmail.com">
-                        <!-- eslint-disable -->
-                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
-                            <path fill="#ddd4cc"
-                                  d="M28 11.094v12.406c0 1.375-1.125 2.5-2.5 2.5h-23c-1.375 0-2.5-1.125-2.5-2.5v-12.406c0.469 0.516 1 0.969 1.578 1.359 2.594 1.766 5.219 3.531 7.766 5.391 1.313 0.969 2.938 2.156 4.641 2.156h0.031c1.703 0 3.328-1.188 4.641-2.156 2.547-1.844 5.172-3.625 7.781-5.391 0.562-0.391 1.094-0.844 1.563-1.359zM28 6.5c0 1.75-1.297 3.328-2.672 4.281-2.438 1.687-4.891 3.375-7.313 5.078-1.016 0.703-2.734 2.141-4 2.141h-0.031c-1.266 0-2.984-1.437-4-2.141-2.422-1.703-4.875-3.391-7.297-5.078-1.109-0.75-2.688-2.516-2.688-3.938 0-1.531 0.828-2.844 2.5-2.844h23c1.359 0 2.5 1.125 2.5 2.5z"
-                            ></path>
-                        </svg>
 
-                        <!-- eslint-enable -->
-                        <span>wasatchforge@gmail.com</span>
-                    </a>
-                </li>
-                <li class="footer-item">
-                    <a
-                        target="_blank"
-                        href="https://www.google.com/maps?ll=40.698728,-111.898975&z=11&t=m&hl=en-US&gl=US&mapclient=embed&q=3345+S+300+W+%235A+South+Salt+Lake,+UT+84115"
-                    >
-                        <!-- eslint-disable -->
-                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="28" viewBox="0 0 26 28">
-                            <path fill="#ddd4cc"
-                                  d="M10 15.75v-3.5q0-0.25-0.25-0.25h-1.5q-0.25 0-0.25 0.25v3.5q0 0.25 0.25 0.25h1.5q0.25 0 0.25-0.25zM18 15.75v-3.5q0-0.25-0.25-0.25h-1.5q-0.25 0-0.25 0.25v3.5q0 0.25 0.25 0.25h1.5q0.25 0 0.25-0.25zM26 16.25v11.75h-10v-5q0-1.25-0.875-2.125t-2.125-0.875-2.125 0.875-0.875 2.125v5h-10v-11.75q0-0.25 0.25-0.25h1.5q0.25 0 0.25 0.25v1.75h2v-9.75q0-0.25 0.25-0.25h1.5q0.25 0 0.25 0.25v1.75h2v-1.75q0-0.25 0.25-0.25h1.5q0.25 0 0.25 0.25v1.75h2v-1.75q0-0.25 0.25-0.25h0.25v-6.141q-0.5-0.297-0.5-0.859 0-0.406 0.297-0.703t0.703-0.297 0.703 0.297 0.297 0.703q0 0.562-0.5 0.859v0.141h4.25q0.25 0 0.25 0.25v3.5q0 0.25-0.25 0.25h-4.25v2h0.25q0.25 0 0.25 0.25v1.75h2v-1.75q0-0.25 0.25-0.25h1.5q0.25 0 0.25 0.25v1.75h2v-1.75q0-0.25 0.25-0.25h1.5q0.25 0 0.25 0.25v9.75h2v-1.75q0-0.25 0.25-0.25h1.5q0.25 0 0.25 0.25z"
-                            ></path>
-                        </svg>
-                        <!-- eslint-enable -->
-                        <span>3345 S 300 W, # 5A Salt Lake City, UT</span>
-                    </a>
-                </li>
-            </ul>
+            <nav class="main-footer-nav">
+                <nuxt-link class="main-footer-nav-link" to="/history">Our History</nuxt-link>
+                <nuxt-link class="main-footer-nav-link" to="/blacksmiths">The Blacksmiths</nuxt-link>
+                <nuxt-link class="main-footer-nav-link" to="/products">Products</nuxt-link>
+                <nuxt-link class="main-footer-nav-link" to="/contact">Contact</nuxt-link>
+                <!--<nuxt-link class="main-footer-nav-link" to="/book-lessons">Book Lessons</nuxt-link>-->
+            </nav>
+
+            <nuxt-link class="footer-logo" to="/">
+                <Logo scheme="light"/>
+            </nuxt-link>
+
+            <span class="main-footer-item">
+                <a target="_blank" href="tel:801-808-2897">
+                    <span>801-613-0593</span>
+                </a>
+                <span class="main-footer-middot">&middot;</span>
+                <a target="_blank" href="mailto:wasatchforge@gmail.com">
+                    <span>wasatchforge@gmail.com</span>
+                </a>
+            </span>
+
+            <span class="main-footer-item">
+                <a target="_blank" href="https://goo.gl/maps/7a7kZmGQLDU2">
+                    <address>3345 S 300 W, # 4A Salt Lake City, UT</address>
+                </a>
+            </span>
+
+            <span class="main-footer-item">
+                <nuxt-link class="main-footer-cta" to="/book-lessons">Book Lessons</nuxt-link>
+            </span>
+
+            <span class="main-footer-item">
+                <a target="_blank" href="https://www.facebook.com/peterwright134/">
+                    <!-- eslint-disable -->
+                    <svg class="main-footer-social-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                        <path d="M19 6h5v-6h-5c-3.86 0-7 3.14-7 7v3h-4v6h4v16h6v-16h5l1-6h-6v-3c0-0.542 0.458-1 1-1z"></path>
+                    </svg>
+                    <!-- eslint-enable -->
+                </a>
+            </span>
         </div>
     </footer>
 </template>
 
 <script>
+    import Logo from '~/components/Logo'
+
     export default {
         name: 'Footer',
+        components: { Logo },
         data () {
             return {}
         }
@@ -60,49 +63,87 @@
     @import '../assets/scss/the-goods';
 
     .main-footer {
-        background : linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1));
-        height     : $footer-height;
-        padding    : 2.5rem 0 0 0;
+        background : $color-off-black;
+        padding    : 8rem 0 6rem 0;
         position   : relative;
         z-index    : 1;
 
         &-inner {
+            align-items     : center;
             display         : flex;
+            flex-direction  : column;
             justify-content : space-between;
         }
 
-        a {
+        &-nav {
+
+            a.main-footer-nav-link {
+                font-family    : 'Open Sans', sans-serif;
+                font-size      : 1.2rem;
+                font-weight    : 700;
+                letter-spacing : 0.05em;
+                padding        : 0 0.8rem;
+                text-transform : uppercase;
+            }
+        }
+
+        .footer-logo {
+            margin : 6rem 0 3rem 0;
+
+            .logo-svg {
+                width   : 9rem;
+                display : inline-flex;
+            }
+        }
+
+        &-item {
+            display : inline-flex;
+            margin  : 0.8rem auto;
+
+            .main-footer-cta {
+                border         : solid 1px;
+                border-radius  : 0.5rem;
+                font-size      : 1.6rem;
+                letter-spacing : 0.05em;
+                margin         : 1rem 0;
+                padding        : 1rem 2rem;
+                text-transform : uppercase;
+            }
+        }
+
+        &-middot {
             color       : $color-text-light;
-            display     : flex;
+            font-size   : 3rem;
+            line-height : 3rem;
+            margin      : 0 1rem;
+        }
+
+        &-social-icon {
+            max-height : 2rem;
+
+            path {
+                fill       : $color-off-white;
+                transition : fill 250ms $cubic-out;
+
+                .main-footer-item a:hover & {
+                    fill : $color-grey;
+                }
+            }
+        }
+
+        a {
             align-items : center;
+            color       : $color-off-white;
+            font-size   : 2rem;
 
             &:hover {
-                color           : $color-molten;
+                color           : $color-grey;
                 text-decoration : none;
             }
         }
-    }
 
-    .footer-items {
-        display   : flex;
-        font-size : 1.4rem;
-        padding   : 0;
-    }
-
-    .footer-item {
-        align-items    : center;
-        display        : flex;
-        letter-spacing : 0.05em;
-        margin-right   : 1.8rem;
-
-        svg {
-            max-height   : 1.8rem;
-            margin-right : 0.6rem;
-        }
-
-        span {
-            display    : inline-block;
-            margin-top : 0.1rem;
+        address {
+            margin : 0;
         }
     }
 </style>

@@ -27,12 +27,12 @@
         text-transform : capitalize;
 
         .main-nav-subnav-link {
-            color   : $color-text-main;
+            color   : $color-off-white;
             display : block;
             padding : 0.2rem 2rem;
 
             &:hover {
-                color: $color-molten;
+                color: $color-grey;
             }
         }
     }

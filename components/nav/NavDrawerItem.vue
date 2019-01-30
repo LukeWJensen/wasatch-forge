@@ -34,7 +34,7 @@
         text-transform : uppercase;
 
         a {
-            color   : $color-text-main;
+            color   : $color-off-black;
             display : block;
             padding : 0.6rem 0;
         }
