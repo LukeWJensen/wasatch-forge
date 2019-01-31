@@ -5,7 +5,12 @@
         </Hero>
         <div class="container">
             <div class="page-content">
-                <h2>Stuff goes here</h2>
+                <section class="col-10 offset-1">
+                    <p>
+                        Wasatch Forge was started by two good friends with a common passion: bringing steel to life using fire as a tool.
+                        Matt and Mike have sought since the beginning to share their passion with others &mdash; through the craftsmanship of their wares, the hospitality of their shop, and by sharing their knowledge with anyone and everyone.
+                    </p>
+                </section>
             </div>
         </div>
     </div>

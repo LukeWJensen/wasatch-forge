@@ -28,7 +28,11 @@
         justify-content : center;
         overflow        : hidden;
         position        : relative;
-        height          : calc(100vh - #{$header-height});
+        height          : 65vh;
+
+        .home & {
+            height : calc(100vh - #{$header-height});
+        }
 
         &.hero-align-left {
             align-items     : flex-start;
@@ -43,12 +47,12 @@
             z-index : 1;
 
             .hero-align-left & {
-                margin : auto auto 10rem auto;
+                margin : auto auto 6rem auto;
             }
         }
 
         &-heading {
-            color          : $color-off-white;
+            color          : rgba(255, 255, 255, 0.85);
             font-family    : Copperplate, serif;
             font-size      : 9rem;
             font-weight    : 500;
@@ -61,7 +65,7 @@
 
             .hero-align-left & {
                 text-align : left;
-                margin: 0;
+                margin     : 0;
             }
 
             .hero-align-right & {

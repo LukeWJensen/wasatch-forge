@@ -1,7 +1,7 @@
 <template>
     <div class="page-book-lessons">
         <Hero heading="Products" align="left">
-            <BackgroundImage :img-src="heroImgSrc" :tint="false"/>
+            <BackgroundImage :img-src="heroImgSrc" :tint="true"/>
         </Hero>
         <div class="container">
             <div class="page-content">

@@ -1,5 +1,5 @@
 <template>
-    <div class="background-image absolute-fill">
+    <div :class="`background-image--align-${align}`" class="background-image absolute-fill">
         <img
             :src="imgSrc"
             alt=""
@@ -15,6 +15,7 @@
         props: {
             imgSrc: String,
             alt: String,
+            align: String,
             tint: Boolean
         },
         data () {
@@ -39,7 +40,39 @@
         }
 
         &-tint {
-            background : rgba(0, 0, 0, 0.5);
+            background : linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 60%, rgba(0, 0, 0, 0.7) 100%);
+        }
+
+        &--align-top {
+
+            .background-image-img {
+                top       : 0;
+                transform : translate(-50%, 0);
+            }
+        }
+
+        &--align-bottom {
+
+            .background-image-img {
+                bottom    : 0;
+                transform : translate(-50%, 0);
+            }
+        }
+
+        &--align-left {
+
+            .background-image-img {
+                left      : 0;
+                transform : translate(0, -50%);
+            }
+        }
+
+        &--align-right {
+
+            .background-image-img {
+                right     : 0;
+                transform : translate(0, -50%);
+            }
         }
     }
 </style>

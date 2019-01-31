@@ -19,15 +19,33 @@
 
     export default {
         components: { Header, NavDrawer, Footer, Modal },
-        mixins: [ LayoutsMixin ]
+        mixins: [LayoutsMixin]
     }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
     @import '../assets/scss/the-goods';
 
     .page-container {
-        background : $color-bg-mid;
+        background : $color-off-white;
         min-height : 100vh;
+    }
+
+    .page-content {
+        background  : $color-off-white;
+        font-size   : 1.8rem;
+        line-height : 1.6;
+        margin      : 8rem auto;
+        position    : relative;
+        z-index     : 1;
+
+        section {
+            columns     : 300px 2;
+            column-gap  : 6rem;
+        }
+
+        p {
+            margin: 0 0 2.4rem 0;
+        }
     }
 </style>
