@@ -26,7 +26,7 @@
 
             <span class="main-footer-item">
                 <a target="_blank" href="https://goo.gl/maps/7a7kZmGQLDU2">
-                    <address>3345 S 300 W, # 4A Salt Lake City, UT</address>
+                    <address>3345 S 300 W, # A4 Salt Lake City, UT</address>
                 </a>
             </span>
 
