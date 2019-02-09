@@ -90,11 +90,15 @@
             transition     : opacity 400ms $cubic-out, transform 300ms $cubic-out;
 
             &:nth-child(1) {
-                transition-delay : 100ms;
+                transition-delay : 75ms;
             }
 
             &:nth-child(2) {
-                transition-delay : 200ms;
+                transition-delay : 150ms;
+            }
+
+            &:nth-child(3) {
+                transition-delay : 225ms;
             }
 
             .nav-drawer-item--subnav--open & {

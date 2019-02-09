@@ -27,7 +27,7 @@
         },
         computed: {
             heroImgSrc () {
-                return require('~/assets/images/hero/shop.jpg')
+                return require('~/assets/images/hero/working.jpg')
             }
         }
     }

@@ -2,8 +2,9 @@
     <nav class="main-nav">
         <ul class="main-nav-links barlow">
             <SubNav text="About">
-                <SubNavItem text="Our History" to="/history"/>
+                <SubNavItem text="The Shop" to="/shop"/>
                 <SubNavItem text="The Blacksmiths" to="/blacksmiths"/>
+                <SubNavItem text="Our History" to="/history"/>
             </SubNav>
             <NavItem text="Products" to="/products"/>
             <NavItem text="Contact" to="/contact"/>

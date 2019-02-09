@@ -8,12 +8,16 @@
             />
             <NavDrawerSubNav text="About">
                 <NavDrawerItem
-                    text="Our History"
-                    to="/history"
+                    text="The Shop"
+                    to="/shop"
                 />
                 <NavDrawerItem
                     text="The Blacksmiths"
                     to="/blacksmiths"
+                />
+                <NavDrawerItem
+                    text="Our History"
+                    to="/history"
                 />
             </NavDrawerSubNav>
             <NavDrawerItem text="Products" to="/products"/>
