@@ -4,7 +4,7 @@
             <Header/>
             <NavDrawer v-if="deviceLargeUp"/>
             <nuxt/>
-            <Modal/>
+            <ModalBg/>
             <Footer/>
         </div>
     </div>
@@ -15,10 +15,10 @@
     import Header from '~/components/Header'
     import NavDrawer from '~/components/nav/NavDrawer'
     import Footer from '~/components/Footer'
-    import Modal from '~/components/Modal'
+    import ModalBg from '~/components/ModalBg'
 
     export default {
-        components: { Header, NavDrawer, Footer, Modal },
+        components: { Header, NavDrawer, Footer, ModalBg },
         mixins: [LayoutsMixin]
     }
 </script>
@@ -32,20 +32,21 @@
     }
 
     .page-content {
-        background  : $color-off-white;
-        font-size   : 1.8rem;
-        line-height : 1.6;
-        margin      : 8rem auto;
-        position    : relative;
-        z-index     : 1;
+        background     : $color-off-white;
+        font-size      : 1.6rem;
+        line-height    : 1.5;
+        letter-spacing : 0.02em;
+        margin         : 8rem auto;
+        position       : relative;
+        z-index        : 1;
 
         section {
-            columns     : 300px 2;
-            column-gap  : 6rem;
+            columns    : 300px 2;
+            column-gap : 6rem;
         }
 
         p {
-            margin: 0 0 2.4rem 0;
+            margin : 0 0 2.4rem 0;
         }
     }
 </style>

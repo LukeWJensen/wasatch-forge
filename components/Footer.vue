@@ -11,7 +11,7 @@
             </nav>
 
             <nuxt-link class="footer-logo" to="/">
-                <Logo scheme="light"/>
+                <Logo scheme="light" />
             </nuxt-link>
 
             <span class="main-footer-item">
@@ -31,7 +31,7 @@
             </span>
 
             <span class="main-footer-item">
-                <nuxt-link class="main-footer-cta" to="/book-lessons">Book Lessons</nuxt-link>
+                <nuxt-link class="main-footer-cta cta" to="/book-lessons">Book Lessons</nuxt-link>
             </span>
 
             <span class="main-footer-item">
@@ -60,90 +60,86 @@
 </script>
 
 <style lang="scss">
-    @import '../assets/scss/the-goods';
+@import '../assets/scss/the-goods';
 
-    .main-footer {
-        background : $color-off-black;
-        padding    : 8rem 0 6rem 0;
-        position   : relative;
-        z-index    : 1;
+.main-footer {
+    background : $color-off-black;
+    padding    : 8rem 0 6rem 0;
+    position   : relative;
+    z-index    : 1;
 
-        &-inner {
-            align-items     : center;
-            display         : flex;
-            flex-direction  : column;
-            justify-content : space-between;
-        }
+    &-inner {
+        align-items     : center;
+        display         : flex;
+        flex-direction  : column;
+        justify-content : space-between;
+    }
 
-        &-nav {
+    &-nav {
 
-            a.main-footer-nav-link {
-                font-family    : 'Open Sans', sans-serif;
-                font-size      : 1.2rem;
-                font-weight    : 700;
-                letter-spacing : 0.05em;
-                padding        : 0 0.8rem;
-                text-transform : uppercase;
-            }
-        }
-
-        .footer-logo {
-            margin : 6rem 0 3rem 0;
-
-            .logo-svg {
-                width   : 9rem;
-                display : inline-flex;
-            }
-        }
-
-        &-item {
-            display : inline-flex;
-            margin  : 0.8rem auto;
-
-            .main-footer-cta {
-                border         : solid 1px;
-                border-radius  : 0.5rem;
-                font-size      : 1.6rem;
-                letter-spacing : 0.05em;
-                margin         : 1rem 0;
-                padding        : 1rem 2rem;
-                text-transform : uppercase;
-            }
-        }
-
-        &-middot {
-            color       : $color-text-light;
-            font-size   : 3rem;
-            line-height : 3rem;
-            margin      : 0 1rem;
-        }
-
-        &-social-icon {
-            max-height : 2rem;
-
-            path {
-                fill       : $color-off-white;
-                transition : fill 250ms $cubic-out;
-
-                .main-footer-item a:hover & {
-                    fill : $color-grey;
-                }
-            }
-        }
-
-        a {
-            align-items : center;
-            color       : $color-off-white;
-            font-size   : 2rem;
-
-            &:hover {
-                color           : $color-grey;
-                text-decoration : none;
-            }
-        }
-
-        address {
-            margin : 0;
+        a.main-footer-nav-link {
+            font-family    : 'Source Sans Pro', sans-serif;
+            font-size      : 1.2rem;
+            font-weight    : 700;
+            letter-spacing : 0.05em;
+            padding        : 0 0.8rem;
+            text-transform : uppercase;
         }
     }
+
+    .footer-logo {
+        margin : 6rem 0 3rem 0;
+
+        .logo-svg {
+            width   : 9rem;
+            display : inline-flex;
+        }
+    }
+
+    &-item {
+        display : inline-flex;
+        margin  : 0.8rem auto;
+
+        .main-footer-cta {
+            border    : solid 1px;
+            font-size : 1.6rem;
+            margin    : 1rem 0;
+        }
+    }
+
+    &-middot {
+        color       : $color-text-light;
+        font-size   : 3rem;
+        line-height : 3rem;
+        margin      : 0 1rem;
+    }
+
+    &-social-icon {
+        max-height : 2rem;
+
+        path {
+            fill       : $color-off-white;
+            transition : fill 250ms $cubic-out;
+
+            .main-footer-item a:hover & {
+                fill : $color-grey;
+            }
+        }
+    }
+
+    a {
+        align-items : center;
+        color       : $color-off-white;
+        font-size   : 2rem;
+
+        &:hover {
+            color           : $color-grey;
+            text-decoration : none;
+        }
+    }
+
+    address {
+        margin : 0;
+    }
+}
 </style>
