@@ -26,3 +26,19 @@ input[type=submit] {
         cursor : pointer;
     }
 }
+
+.close-btn {
+    align-items      : center;
+    background-color : white;
+    border           : solid 1px #e1e1e1;
+    border-radius    : 2rem;
+    display          : flex;
+    justify-content  : center;
+    height           : 4rem;
+    transition       : border-color 250ms $cubic-out;
+    width            : 4rem;
+
+    &:hover {
+        border-color: $color-off-black;
+    }
+}

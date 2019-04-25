@@ -29,6 +29,15 @@
                 value="Submit"
             >
         </form>
+        <button class="subscribe-form-close close-btn" @click="handleClose">
+            <svg
+                width="12px"
+                x="0px"
+                y="0px"
+                viewBox="0 0 15 15">
+                <polygon fill="#222" points="15,1.4 13.6,0 7.5,6.1 1.4,0 0,1.4 6.1,7.5 0,13.6 1.4,15 7.5,8.9 13.6,15 15,13.6 8.9,7.5 "/>
+            </svg>
+        </button>
     </div>
 </template>
 
@@ -43,6 +52,9 @@
         methods: {
             handleFormSubmit () {
                 this.formSubmitted = true
+            },
+            handleClose () {
+                this.$store.commit('modal/setActive', false)
             }
         }
     }
@@ -79,6 +91,12 @@
         &.cta--highlight {
             border : 0;
         }
+    }
+
+    &-close {
+        position : absolute;
+        right    : 1.5rem;
+        top      : 1.5rem;
     }
 }
 </style>
