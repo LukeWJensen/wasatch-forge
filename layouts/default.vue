@@ -1,11 +1,11 @@
 <template>
     <div id="app">
         <div class="page-container">
-            <Header />
-            <NavDrawer v-if="deviceLargeUp" />
-            <nuxt />
-            <ModalBg />
-            <Footer />
+            <Header/>
+            <NavDrawer v-if="deviceLargeUp"/>
+            <nuxt/>
+            <ModalBg/>
+            <Footer/>
         </div>
     </div>
 </template>
@@ -40,12 +40,8 @@
     position       : relative;
     z-index        : 1;
 
-    section {
-        columns    : 300px 2;
-        column-gap : 6rem;
-    }
-
-    p:not(.callout) {
+    p:not(.callout),
+    ul {
         margin : 0 0 2.4rem 0;
     }
 }

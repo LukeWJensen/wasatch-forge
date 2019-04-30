@@ -8,11 +8,10 @@
                 <nuxt-link class="main-footer-nav-link" to="/blacksmiths">The Blacksmiths</nuxt-link>
                 <nuxt-link class="main-footer-nav-link" to="/products">Products</nuxt-link>
                 <nuxt-link class="main-footer-nav-link" to="/contact">Contact</nuxt-link>
-                <!--<nuxt-link class="main-footer-nav-link" to="/book-lessons">Book Lessons</nuxt-link>-->
             </nav>
 
             <nuxt-link class="footer-logo" to="/">
-                <Logo scheme="light" />
+                <Logo scheme="light"/>
             </nuxt-link>
 
             <span class="main-footer-item">

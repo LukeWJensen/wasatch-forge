@@ -51,7 +51,11 @@ img {
 p.callout {
     font-size  : 2.4rem;
     line-height: 1.6;
-    margin     : 0 auto 7rem auto;
+    margin     : 7rem auto;
     max-width  : 70%;
     text-align : center;
+
+    .cta {
+        margin-top: 3.2rem;
+    }
 }

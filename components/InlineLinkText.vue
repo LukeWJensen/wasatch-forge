@@ -33,13 +33,18 @@
         bottom           : -0.1rem;
         content          : "";
         height           : 0.3rem;
-        left             : -0.4rem;
+        left             : -0.2rem;
         position         : absolute;
         transform-origin : bottom;
         transition       : transform 300ms $cubic-out;
-        width            : calc(100% + 0.8rem);
+        width            : calc(100% + 0.4rem);
         will-change      : transform;
         z-index          : -1;
+
+        .callout & {
+            left   : -0.4rem;
+            width  : calc(100% + 0.8rem);
+        }
     }
 
     .inline-link--hover & {
