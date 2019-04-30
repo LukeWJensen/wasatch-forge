@@ -115,7 +115,7 @@
             padding-left : 1rem;
             position     : absolute;
             right        : -1.6rem;
-            bottom       : 0.7rem;
+            bottom       : 0.8rem;
         }
     }
 </style>

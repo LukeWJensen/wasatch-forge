@@ -58,6 +58,10 @@
         margin         : 0 1.5rem 0 2.5rem;
         text-transform : uppercase;
 
+        &--subnav {
+            margin-right : 2.5rem;
+        }
+
         &--highlight {
             background    : $color-molten;
             border-radius : 0.5rem;
