@@ -18,7 +18,7 @@ html {
 
 body {
     font-size   : 1.5rem;
-    font-family : 'Open Sans', 'sans-serif';
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 *,
@@ -42,4 +42,16 @@ a, button {
 
 a {
     transition : color 250ms $cubic-out;
+}
+
+img {
+    max-width: 100%;
+}
+
+p.callout {
+    font-size  : 2.4rem;
+    line-height: 1.6;
+    margin     : 0 auto 7rem auto;
+    max-width  : 70%;
+    text-align : center;
 }

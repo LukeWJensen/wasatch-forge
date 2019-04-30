@@ -11,21 +11,25 @@
                     </div>
                     <div class="col-8 blacksmith-bio">
                         <h2 class="blacksmith-name">Matt Danielson</h2>
-                        <p>When you close your eyes and picture a blacksmith, you're probably already seeing Matt. He's a bear of a
-                        blacksmith who makes our biggest anvil look small.</p>
-                        <p>Matt's a sharer. He takes the forge on the road for demonstrations at festivals, conferences, even corporate events. He
-                        opens the shop every Tuesday night for basic forging classes. He usually has a handful of apprentices.</p>
-                        <p>Matt is also a member of the Society for Creative Anachronism, where he can often be seen towering over people on the
-                        field, wearing 80 pounds of armor and swinging a two-handed great sword. Matt is the master of the local SCA blacksmiths
-                        guild and quite a few reenactors get their first experience with medieval blacksmithing from Matt.</p>
+                        <div class="text-two-col">
+                            <p>When you close your eyes and picture a blacksmith, you're probably already seeing Matt. He's a bear of a
+                            blacksmith who makes our biggest anvil look small.</p>
+                            <p>Matt's a sharer. He takes the forge on the road for demonstrations at festivals, conferences, even corporate events. He
+                            opens the shop every Tuesday night for basic forging classes. He usually has a handful of apprentices.</p>
+                            <p>Matt is also a member of the Society for Creative Anachronism, where he can often be seen towering over people on the
+                            field, wearing 80 pounds of armor and swinging a two-handed great sword. Matt is the master of the local SCA blacksmiths
+                            guild and quite a few reenactors get their first experience with medieval blacksmithing from Matt.</p>
+                        </div>
                     </div>
                 </section>
                 <section class="blacksmith-row row">
                     <div class="col-8 blacksmith-bio">
                         <h2 class="blacksmith-name">Michael Miller-Imperiale</h2>
-                        <p>Mike is a full-time dad and a part-time blacksmith who found smithing when he wanted to fall in love with work that didn't take him away from home as often as his previous career as a wilderness guide. It worked.</p>
-                        <p>Smithing fits in nicely with Mike's favorite hobby, drinking beer. He's forged hundreds of bottle openers, ranging from stoicly utilitarian to intricately beautiful. Mike has mastered the art of opening a bottle of beer.</p>
-                        <p>Mike teaches half-day and full-day artistic blacksmithing, accepts commissions, designs some of our most beautiful products, and takes the gorgeous product photos on our site.</p>
+                        <div class="text-two-col">
+                            <p>Mike is a full-time dad and a part-time blacksmith who found smithing when he wanted to fall in love with work that didn't take him away from home as often as his previous career as a wilderness guide. It worked.</p>
+                            <p>Smithing fits in nicely with Mike's favorite hobby, drinking beer. He's forged hundreds of bottle openers, ranging from stoicly utilitarian to intricately beautiful. Mike has mastered the art of opening a bottle of beer.</p>
+                            <p>Mike teaches half-day and full-day artistic blacksmithing, accepts commissions, designs some of our most beautiful products, and takes the gorgeous product photos on our site.</p>
+                        </div>
                     </div>
                     <div class="col-4 blacksmith-img">
                         <BackgroundImage :img-src="mikeImgSrc" align="top"/>

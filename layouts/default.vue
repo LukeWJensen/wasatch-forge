@@ -1,11 +1,11 @@
 <template>
     <div id="app">
         <div class="page-container">
-            <Header/>
-            <NavDrawer v-if="deviceLargeUp"/>
-            <nuxt/>
-            <ModalBg/>
-            <Footer/>
+            <Header />
+            <NavDrawer v-if="deviceLargeUp" />
+            <nuxt />
+            <ModalBg />
+            <Footer />
         </div>
     </div>
 </template>
@@ -24,29 +24,29 @@
 </script>
 
 <style lang="scss">
-    @import '../assets/scss/the-goods';
+@import '../assets/scss/the-goods';
 
-    .page-container {
-        background : $color-off-white;
-        min-height : 100vh;
+.page-container {
+    background : $color-off-white;
+    min-height : 100vh;
+}
+
+.page-content {
+    background     : $color-off-white;
+    font-size      : 1.8rem;
+    line-height    : 1.5;
+    letter-spacing : 0.02em;
+    margin         : 8rem auto;
+    position       : relative;
+    z-index        : 1;
+
+    section {
+        columns    : 300px 2;
+        column-gap : 6rem;
     }
 
-    .page-content {
-        background     : $color-off-white;
-        font-size      : 1.6rem;
-        line-height    : 1.5;
-        letter-spacing : 0.02em;
-        margin         : 8rem auto;
-        position       : relative;
-        z-index        : 1;
-
-        section {
-            columns    : 300px 2;
-            column-gap : 6rem;
-        }
-
-        p {
-            margin : 0 0 2.4rem 0;
-        }
+    p:not(.callout) {
+        margin : 0 0 2.4rem 0;
     }
+}
 </style>

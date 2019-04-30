@@ -81,7 +81,7 @@
         transition : max-height 400ms $cubic-out;
 
         .nav-drawer-item {
-            font-family    : "Open Sans", sans-serif;
+            font-family    : "Source Sans Pro", sans-serif;
             font-size      : 1.6rem;
             font-weight    : 700;
             opacity        : 0;

@@ -28,6 +28,7 @@
     @import "../assets/scss/_the-goods";
 
     .background-image {
+        overflow: hidden;
 
         &-img {
             position   : absolute;
