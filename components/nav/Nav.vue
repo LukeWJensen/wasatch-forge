@@ -53,7 +53,6 @@
         font-size      : 1.6rem;
         font-weight    : 700;
         height         : 3.6rem;
-        padding        : 0.5rem 0;
         position       : relative;
         margin         : 0 1.5rem 0 2.5rem;
         text-transform : uppercase;
@@ -145,7 +144,8 @@
         }
 
         a {
-            color : $color-off-black;
+            color   : $color-off-black;
+            padding : 0.5rem 0;
 
             &:hover {
                 text-decoration : none;
