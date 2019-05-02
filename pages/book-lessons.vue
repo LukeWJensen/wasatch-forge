@@ -4,7 +4,6 @@
             <BackgroundImage
                 :img-src="heroImgSrc"
                 :tint="true"
-                align="top"
             />
         </Hero>
         <div class="container">
