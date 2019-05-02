@@ -1,5 +1,5 @@
 <template>
-    <div class="page-book-lessons">
+    <div class="page-blacksmiths">
         <Hero heading="The Blacksmiths" align="left">
             <BackgroundImage
                 :img-src="heroImgSrc"
@@ -11,10 +11,10 @@
             <div class="page-content">
 
                 <section class="blacksmith-row row">
-                    <div class="col-4 blacksmith-img d-flex flex-column justify-content-center">
+                    <div class="col-12 col-md-4 blacksmith-img d-flex flex-column justify-content-center">
                         <img :src="require('~/assets/images/blacksmiths/matt.jpg')">
                     </div>
-                    <div class="col-8 blacksmith-bio d-flex flex-column justify-content-center">
+                    <div class="col-12 col-md-8 blacksmith-bio d-flex flex-column justify-content-center">
                         <h2 class="blacksmith-name">Matt Danielson</h2>
                         <div class="text-two-col">
                             <p>When you close your eyes and picture a blacksmith, you're probably already seeing Matt. He's a bear of a blacksmith who makes our biggest anvil look small.</p>
@@ -27,7 +27,7 @@
                 </section>
 
                 <section class="blacksmith-row row">
-                    <div class="col-8 blacksmith-bio d-flex flex-column justify-content-center">
+                    <div class="col-12 col-md-8 blacksmith-bio d-flex flex-column justify-content-center">
                         <h2 class="blacksmith-name">Walter Enoch Elieson</h2>
                         <div class="text-two-col">
                             <p>Enoch is a co-owner of Wasatch Forge and works as an event planning coordinator and member of the design team.</p>
@@ -35,16 +35,16 @@
                             <p>When he's not working at the forge, Enoch also enjoys woodworking, historical reenactment, classic cars and four-wheeling.</p>
                         </div>
                     </div>
-                    <div class="col-4 blacksmith-img d-flex flex-column justify-content-center">
+                    <div class="col-12 col-md-4 blacksmith-img d-flex flex-column justify-content-center">
                         <img :src="require('~/assets/images/blacksmiths/enoch.jpg')">
                     </div>
                 </section>
 
                 <section class="blacksmith-row row">
-                    <div class="col-4 blacksmith-img d-flex flex-column justify-content-center">
+                    <div class="col-12 col-md-4 blacksmith-img d-flex flex-column justify-content-center">
                         <img :src="require('~/assets/images/blacksmiths/mike.jpg')">
                     </div>
-                    <div class="col-8 blacksmith-bio d-flex flex-column justify-content-center">
+                    <div class="col-12 col-md-8 blacksmith-bio d-flex flex-column justify-content-center">
                         <h2 class="blacksmith-name">Michael Miller-Imperiale</h2>
                         <div class="text-two-col">
                             <p>Mike is a full-time dad and a part-time blacksmith who found smithing when he wanted to fall in love with work that didn't take him away from home as often as his previous career as a wilderness guide. It worked.</p>
@@ -80,12 +80,31 @@
 <style lang="scss">
     @import '../assets/scss/the-goods';
 
+    .page-blacksmiths {
+
+        .page-content {
+            padding: 0;
+        }
+    }
+
     .blacksmith-row {
-        margin: 0 auto 8rem auto;
+        margin : 0 auto 4rem auto;
+
+        @include screen-lg-xl {
+            margin : 0 auto 8rem auto;
+        }
+
+        &:first-child {
+            @include screen-xs-sm {
+                margin-top : 6rem;
+            }
+        }
 
         &:nth-child(even) {
             .blacksmith-bio {
-                padding : 0 5rem 0 0;
+                @include screen-lg-xl {
+                    padding : 0 5rem 0 0;
+                }
             }
         }
     }
@@ -93,10 +112,24 @@
     .blacksmith-img {
         position : relative;
         overflow : hidden;
+
+        @include screen-xs-sm {
+            margin: 0 0 2.2rem 0;
+        }
+
+        @include screen-md {
+            justify-content: flex-start !important;
+        }
     }
 
     .blacksmith-bio {
-        padding : 0 0 0 5rem;
+        @include screen-xs-sm {
+            order: 1;
+        }
+
+        @include screen-lg-xl {
+            padding : 0 0 0 5rem;
+        }
     }
 
     .blacksmith-name {
