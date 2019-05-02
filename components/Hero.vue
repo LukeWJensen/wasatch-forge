@@ -54,6 +54,10 @@
         &-heading-wrap {
             z-index : 1;
 
+            @include screen-xs-sm {
+                padding : 0 3rem;
+            }
+
             .hero-align-left & {
                 margin : auto auto 3rem auto;
 

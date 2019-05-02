@@ -123,6 +123,14 @@
 
         @include screen-md-lg-xl {
             margin-bottom: 0;
+
+            &:first-child {
+                padding-right: 3rem;
+            }
+
+            &:last-child {
+                padding-left: 3rem;
+            }
         }
     }
 
@@ -131,7 +139,7 @@
         margin     : 0 0 1.2rem 0;
         max-height : 20rem;
 
-        @include screen-md-lg-xl {
+        @include screen-lg-xl {
             max-height : 26rem;
         }
 
