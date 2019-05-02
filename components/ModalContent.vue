@@ -17,6 +17,6 @@
 <style lang="scss">
 .modal-content {
     position : fixed;
-    z-index  : 3;
+    z-index  : 6;
 }
 </style>
