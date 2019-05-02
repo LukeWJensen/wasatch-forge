@@ -135,7 +135,11 @@
     }
 
     .blacksmith-name {
-        line-height : 1;
+        line-height : 1.2;
         margin      : 0 0 2rem 0;
+
+        @include screen-md-lg-xl {
+            line-height : 1;
+        }
     }
 </style>
