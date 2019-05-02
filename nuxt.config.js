@@ -16,7 +16,10 @@ module.exports = {
         link: [
             { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
             { rel: 'stylesheet', type: 'text/css', href: 'https://fonts.googleapis.com/css?family=Barlow|Source+Sans+Pro' }
-        ]
+        ],
+        bodyAttrs: {
+            class: 'init'
+        }
     },
 
     /*
@@ -35,7 +38,7 @@ module.exports = {
     ** Plugins to load before mounting the App
     */
     plugins: [
-        '~/plugins/global_listeners.js',
+        '~/plugins/global_listeners.js'
     ],
 
     /*
@@ -45,6 +48,11 @@ module.exports = {
         // Doc: https://github.com/nuxt-community/axios-module#usage
         '@nuxtjs/axios'
     ],
+
+    router: {
+        middleware: 'addInitAttribute'
+    },
+
     /*
     ** Axios module configuration
     */

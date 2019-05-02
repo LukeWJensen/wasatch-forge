@@ -26,7 +26,3 @@
         }
     }
 </script>
-
-<style lang="scss">
-    @import "../assets/scss/the-goods";
-</style>

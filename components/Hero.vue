@@ -59,8 +59,10 @@
             line-height    : 7rem;
             margin         : auto;
             max-width      : 600px;
+            opacity        : 0;
             text-align     : center;
             text-transform : uppercase;
+            transform      : translateY(-2rem);
             z-index        : 1;
 
             .hero-align-left & {
@@ -70,6 +72,14 @@
 
             .hero-align-right & {
                 text-align : right;
+            }
+
+            body.init & {
+                animation : headingEnter 0.7s $cubic-out 0.2s forwards;
+            }
+
+            body.init .home & {
+                animation : headingEnter 1s $cubic-out 1s forwards;
             }
         }
     }
