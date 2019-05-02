@@ -13,7 +13,7 @@
                             an office and shop space in Walton Park in Salt Lake city, Utah. After Victor and Preston moved on to other pursuits, Mike
                             and Matt continued growing Wasatch Forge through community outreach and lots of hard work.</p>
                         <p>During the winter of 2016, Mike decided to pursue his passion of ski instruction at Alta Ski Resort. Matt now runs the shop
-                            with a couple of dedicated apprentices, Steven Moon and Brenden Cochran. The shop focuses on teaching new blacksmiths and
+                            with Walter Enoch Elieson and a couple of dedicated apprentices, Steven Moon and Brenden Cochran. The shop focuses on teaching new blacksmiths and
                             spreading the passion for the craft.</p>
                     </div>
                     <img class="history-img" :src="require('~/assets/images/history/matt_and_mike_wide.jpg')">
