@@ -80,7 +80,7 @@
         position : relative;
         top      : 0.4rem;
 
-        @include screen-md-lg-xl {
+        @include screen-lg-xl {
             left      : 50%;
             position  : absolute;
             top       : 50%;

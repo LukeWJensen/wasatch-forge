@@ -18,6 +18,11 @@ export default async function ({ app }) {
                 xl: state => state.size.breakpoints.xl
             } )
         },
+        watch: {
+            $route () {
+                this.$store.dispatch('nav/setDrawerOpen', false)
+            }
+        },
         mounted () {
             this.setDeviceSize()
 
