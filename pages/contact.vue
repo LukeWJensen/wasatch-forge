@@ -6,7 +6,7 @@
         <div class="container">
             <div class="page-content">
                 <div class="row">
-                    <div class="col-5">
+                    <div class="col-12 col-lg-5 contact-info">
                         <div class="contact-item">
                             <span class="contact-item-label">Phone:</span>
                             <a target="_blank" href="tel:801-808-2897">
@@ -56,7 +56,7 @@
                         </div>
                         <button class="cta cta--highlight" @click="activateSubscribe">Subscribe To Our Newsletter</button>
                     </div>
-                    <div class="col-7">
+                    <div class="col-12 col-lg-7 contact-map">
                         <!-- eslint-disable -->
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.8690013761498!2d-111.9011603847319!3d40.69888264635511!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87528afc0648c0e5%3A0xdd6b7382a958c06f!2sWasatch+Forge!5e0!3m2!1sen!2sus!4v1548922807992"
                                 width="100%"
@@ -105,6 +105,18 @@
 
 <style lang="scss">
     @import '../assets/scss/the-goods';
+
+    .contact-info {
+        @include screen-xs-sm {
+            margin-bottom: 5rem;
+        }
+    }
+
+    .contact-map {
+        @include screen-xs-sm {
+            margin-bottom: 1rem;
+        }
+    }
 
     .contact-item {
         margin : 0 0 2rem 0;

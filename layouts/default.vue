@@ -44,6 +44,10 @@
         position       : relative;
         z-index        : 1;
 
+        @include screen-xs-sm {
+            padding: 0 1.5rem;
+        }
+
         @include screen-md-lg-xl {
             margin : 8rem auto;
         }
