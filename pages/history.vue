@@ -56,7 +56,7 @@
         },
         computed: {
             heroImgSrc () {
-                return require('~/assets/images/hero/working.jpg')
+                return require('~/assets/images/hero/forge.jpg')
             }
         },
         methods: {
