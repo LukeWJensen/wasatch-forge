@@ -18,7 +18,7 @@ html {
 
 body {
     font-size   : 1.5rem;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family : 'Source Sans Pro', sans-serif;
 }
 
 *,
@@ -29,9 +29,9 @@ body {
 }
 
 h2 {
-    font-size: 3.2rem;
-    line-height: 1.34;
-    margin: 0 0 2rem;
+    font-size   : 3.2rem;
+    line-height : 1.34;
+    margin      : 0 0 2rem;
 }
 
 a, button {
@@ -51,17 +51,22 @@ a {
 }
 
 img {
-    max-width: 100%;
+    max-width : 100%;
 }
 
 p.callout {
-    font-size  : 2.4rem;
-    line-height: 1.6;
-    margin     : 7rem auto;
-    max-width  : 70%;
-    text-align : center;
+    font-size   : 2rem;
+    line-height : 1.6;
+    margin      : 4rem auto;
+    text-align  : center;
+
+    @include screen-md-lg-xl {
+        font-size : 2.4rem;
+        margin    : 7rem auto;
+        max-width : 70%;
+    }
 
     .cta {
-        margin-top: 3.2rem;
+        margin-top : 3.2rem;
     }
 }

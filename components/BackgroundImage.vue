@@ -1,5 +1,5 @@
 <template>
-    <div :class="`background-image--align-${align}`" class="background-image absolute-fill">
+    <div :class="alignClass" class="background-image absolute-fill">
         <img
             :src="imgSrc"
             alt=""
@@ -18,8 +18,10 @@
             align: String,
             tint: Boolean
         },
-        data () {
-            return {}
+        computed: {
+            alignClass () {
+                return this.align ? `background-image--align-${this.align}` : ''
+            }
         }
     }
 </script>
@@ -28,7 +30,7 @@
     @import "../assets/scss/_the-goods";
 
     .background-image {
-        overflow: hidden;
+        overflow : hidden;
 
         &-img {
             position   : absolute;
@@ -47,32 +49,40 @@
         &--align-top {
 
             .background-image-img {
-                top       : 0;
-                transform : translate(-50%, 0);
+                bottom          : auto;
+                object-position : top;
+                top             : 0;
+                transform       : translate(-50%, 0);
             }
         }
 
         &--align-bottom {
 
             .background-image-img {
-                bottom    : 0;
-                transform : translate(-50%, 0);
+                bottom          : 0;
+                object-position : bottom;
+                top             : auto;
+                transform       : translate(-50%, 0);
             }
         }
 
         &--align-left {
 
             .background-image-img {
-                left      : 0;
-                transform : translate(0, -50%);
+                left            : 0;
+                object-position : left;
+                right           : auto;
+                transform       : translate(0, -50%);
             }
         }
 
         &--align-right {
 
             .background-image-img {
-                right     : 0;
-                transform : translate(0, -50%);
+                left            : auto;
+                object-position : right;
+                right           : 0;
+                transform       : translate(0, -50%);
             }
         }
     }

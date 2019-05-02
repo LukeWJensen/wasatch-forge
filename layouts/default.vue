@@ -24,25 +24,33 @@
 </script>
 
 <style lang="scss">
-@import '../assets/scss/the-goods';
+    @import '../assets/scss/the-goods';
 
-.page-container {
-    background : $color-off-white;
-    min-height : 100vh;
-}
+    .page-container {
+        background : $color-off-white;
+        min-height : 100vh;
 
-.page-content {
-    background     : $color-off-white;
-    font-size      : 1.8rem;
-    line-height    : 1.5;
-    letter-spacing : 0.02em;
-    margin         : 8rem auto;
-    position       : relative;
-    z-index        : 1;
-
-    p:not(.callout),
-    ul {
-        margin : 0 0 2.4rem 0;
+        @include screen-xs-sm {
+            margin-top : $header-height-mobile;
+        }
     }
-}
+
+    .page-content {
+        background     : $color-off-white;
+        font-size      : 1.8rem;
+        line-height    : 1.5;
+        letter-spacing : 0.02em;
+        margin         : 4rem auto;
+        position       : relative;
+        z-index        : 1;
+
+        @include screen-md-lg-xl {
+            margin : 8rem auto;
+        }
+
+        p:not(.callout),
+        ul {
+            margin : 0 0 2.4rem 0;
+        }
+    }
 </style>

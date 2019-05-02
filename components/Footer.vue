@@ -81,7 +81,7 @@
 
     .main-footer {
         background : $color-off-black;
-        padding    : 6rem 0 4rem 0;
+        padding    : 6rem 0 5rem 0;
         position   : relative;
         z-index    : 1;
 

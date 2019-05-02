@@ -37,7 +37,9 @@
         },
         methods: {
             handleMouseover () {
-                this.hovering = true
+                if (this.$store.state.size.deviceSize === 'lg' || this.$store.state.size.deviceSize === 'xl') {
+                    this.hovering = true
+                }
             },
             handleMouseleave () {
                 this.hovering = false

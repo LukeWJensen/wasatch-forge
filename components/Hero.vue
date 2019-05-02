@@ -28,10 +28,14 @@
         justify-content : center;
         overflow        : hidden;
         position        : relative;
-        height          : 65vh;
+        height          : 35vh;
+
+        @include screen-md-lg-xl {
+            height : 65vh;
+        }
 
         .home & {
-            height : 100vh;
+            height : calc(100vh - #{$header-height-mobile});
 
             @include screen-md-lg-xl {
                 height : calc(100vh - #{$header-height-desk});
@@ -51,20 +55,24 @@
             z-index : 1;
 
             .hero-align-left & {
-                margin : auto auto 6rem auto;
+                margin : auto auto 3rem auto;
+
+                @include screen-md-lg-xl {
+                    margin : auto auto 6rem auto;
+                }
             }
 
             .home & {
-                margin-bottom: 20vh;
+                margin-bottom : 20vh;
             }
         }
 
         &-heading {
             color          : rgba(255, 255, 255, 0.85);
             font-family    : Copperplate, serif;
-            font-size      : 6rem;
+            font-size      : 4.2rem;
             font-weight    : 500;
-            line-height    : 5rem;
+            line-height    : 3.4rem;
             margin         : auto;
             max-width      : 600px;
             opacity        : 0;
