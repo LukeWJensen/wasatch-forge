@@ -54,7 +54,7 @@
         height     : $header-height-mobile;
         position   : relative;
         width      : 100%;
-        z-index    : 1;
+        z-index    : 5;
 
         @include screen-xs-sm {
             position : fixed;

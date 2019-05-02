@@ -15,18 +15,26 @@
             </nuxt-link>
 
             <span class="main-footer-item">
-                <a target="_blank" href="tel:801-808-2897">
+                <a
+                    class="main-footer-phone"
+                    target="_blank"
+                    href="tel:801-808-2897"
+                >
                     <span>801-613-0593</span>
                 </a>
                 <span class="main-footer-middot">&middot;</span>
-                <a target="_blank" href="mailto:wasatchforge@gmail.com">
+                <a
+                    class="main-footer-email"
+                    target="_blank"
+                    href="mailto:wasatchforge@gmail.com"
+                >
                     <span>wasatchforge@gmail.com</span>
                 </a>
             </span>
 
             <span class="main-footer-item">
                 <a target="_blank" href="https://goo.gl/maps/7a7kZmGQLDU2">
-                    <address>3345 S 300 W, # A4 Salt Lake City, UT</address>
+                    <address>3345 S 300 W, # A4 Salt&nbsp;Lake&nbsp;City,&nbsp;UT</address>
                 </a>
             </span>
 
@@ -69,86 +77,119 @@
 </script>
 
 <style lang="scss">
-@import '../assets/scss/the-goods';
+    @import '../assets/scss/the-goods';
 
-.main-footer {
-    background : $color-off-black;
-    padding    : 8rem 0 6rem 0;
-    position   : relative;
-    z-index    : 1;
+    .main-footer {
+        background : $color-off-black;
+        padding    : 6rem 0 4rem 0;
+        position   : relative;
+        z-index    : 1;
 
-    &-inner {
-        align-items     : center;
-        display         : flex;
-        flex-direction  : column;
-        justify-content : space-between;
-    }
-
-    &-nav {
-
-        a.main-footer-nav-link {
-            font-family    : 'Source Sans Pro', sans-serif;
-            font-size      : 1.2rem;
-            font-weight    : 700;
-            letter-spacing : 0.05em;
-            padding        : 0 0.8rem;
-            text-transform : uppercase;
+        @include screen-md-lg-xl {
+            padding : 8rem 0 6rem 0;
         }
-    }
 
-    .footer-logo {
-        margin : 6rem 0 3rem 0;
-
-        .logo-svg {
-            width   : 9rem;
-            display : inline-flex;
+        &-inner {
+            align-items     : center;
+            display         : flex;
+            flex-direction  : column;
+            justify-content : space-between;
         }
-    }
 
-    &-item {
-        display : inline-flex;
-        margin  : 0.8rem auto;
+        &-nav {
+            text-align : center;
 
-        .main-footer-cta {
-            border    : solid 1px;
-            font-size : 1.6rem;
-            margin    : 1rem 0;
-        }
-    }
-
-    &-middot {
-        color       : $color-text-light;
-        font-size   : 3rem;
-        line-height : 3rem;
-        margin      : 0 1rem;
-    }
-
-    &-social-icon {
-        max-height : 2rem;
-
-        path {
-            fill       : $color-off-white;
-            transition : fill 250ms $cubic-out;
-
-            .main-footer-item a:hover & {
-                fill : $color-grey;
+            a.main-footer-nav-link {
+                display        : inline-flex;
+                font-family    : 'Source Sans Pro', sans-serif;
+                font-size      : 1.2rem;
+                font-weight    : 700;
+                letter-spacing : 0.05em;
+                padding        : 0.8rem;
+                text-transform : uppercase;
             }
         }
-    }
 
-    a {
-        align-items : center;
-        color       : $color-off-white;
-        font-size   : 2rem;
+        .footer-logo {
+            margin : 4rem 0 3rem 0;
 
-        &:hover {
-            color           : $color-grey;
-            text-decoration : none;
+            @include screen-md-lg-xl {
+                margin : 6rem 0 3rem 0;
+            }
+
+            .logo-svg {
+                width   : 9rem;
+                display : inline-flex;
+            }
+        }
+
+        &-item {
+            margin : 0.8rem auto;
+
+            @include screen-xs-sm {
+                text-align : center;
+            }
+
+            @include screen-md-lg-xl {
+                display : inline-flex;
+            }
+
+            .main-footer-cta {
+                border    : solid 1px;
+                font-size : 1.6rem;
+                margin    : 1rem 0;
+            }
+        }
+
+        &-email, &-phone {
+            @include screen-xs-sm {
+                display : block;
+            }
+        }
+
+        &-phone {
+            @include screen-xs-sm {
+                margin-bottom : 1rem;
+            }
+        }
+
+        &-middot {
+            color       : $color-text-light;
+            font-size   : 3rem;
+            line-height : 3rem;
+            margin      : 0 1rem;
+
+            @include screen-xs-sm {
+                display : none;
+            }
+        }
+
+        &-social-icon {
+            max-height : 2rem;
+
+            path {
+                fill       : $color-off-white;
+                transition : fill 250ms $cubic-out;
+
+                .main-footer-item a:hover & {
+                    fill : $color-grey;
+                }
+            }
+        }
+
+        a {
+            align-items : center;
+            color       : $color-off-white;
+            font-size   : 2rem;
+
+            &:hover {
+                color           : $color-grey;
+                text-decoration : none;
+            }
+        }
+
+        address {
+            margin : 0;
         }
     }
-
-    address {
-        margin : 0;
-    }
-}
 </style>

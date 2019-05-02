@@ -64,7 +64,7 @@
             font-family    : Copperplate, serif;
             font-size      : 6rem;
             font-weight    : 500;
-            line-height    : 4.7rem;
+            line-height    : 5rem;
             margin         : auto;
             max-width      : 600px;
             opacity        : 0;
