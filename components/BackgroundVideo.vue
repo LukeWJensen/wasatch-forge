@@ -12,10 +12,10 @@
             loop
             playsinline
         >
-            <source :src="vidSrc" type="video/mp4">
+            <source :src="computedSrc" type="video/mp4">
         </video>
 
-        <div class="background-video-ctrls container">
+        <div v-if="!isMobile" class="background-video-ctrls container">
             <button
                 v-if="$nuxt.$route.name === 'index'"
                 :class="[{
@@ -57,6 +57,7 @@
     export default {
         name: 'BackgroundVideo',
         props: {
+            mobileVidSrc: String,
             posterSrc: String,
             vidSrc: String
         },
@@ -66,6 +67,14 @@
                 videoLoaded: false,
                 videoMuted: true,
                 muteBtnHovering: false
+            }
+        },
+        computed: {
+            isMobile () {
+                return this.$store.state.size.deviceSize === 'xs' || this.$store.state.size.deviceSize === 'sm'
+            },
+            computedSrc () {
+                return this.isMobile ? this.mobileVidSrc : this.vidSrc
             }
         },
         mounted () {

@@ -62,7 +62,7 @@
         top        : 0;
         transform  : translateX(101%);
         transition : transform 250ms $cubic-out;
-        width      : 35rem;
+        width      : 32rem;
         z-index    : 3;
 
         &--open {
@@ -79,14 +79,13 @@
             border      : none;
             color       : transparent;
             font-size   : 1.4rem;
-            height      : 2rem;
+            height      : 2.6rem;
             overflow    : hidden;
             padding     : 0;
             position    : absolute;
-            right       : 1.6rem;
-            text-indent : 1.6rem;
-            top         : 1.6rem;
-            width       : 2rem;
+            right       : 2rem;
+            top         : 2rem;
+            width       : 2.6rem;
 
             &:before, &:after {
                 background : $color-off-black;

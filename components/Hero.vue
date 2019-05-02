@@ -1,5 +1,5 @@
 <template>
-    <div :class="`hero-align-${align}`" class="hero">
+    <div :class="align ? `hero-align-${align}` : ''" class="hero">
         <div class="hero-heading-wrap container">
             <h1 class="hero-heading">{{ heading }}</h1>
         </div>
@@ -31,7 +31,11 @@
         height          : 65vh;
 
         .home & {
-            height : calc(100vh - #{$header-height});
+            height : 100vh;
+
+            @include screen-md-lg-xl {
+                height : calc(100vh - #{$header-height-desk});
+            }
         }
 
         &.hero-align-left {
@@ -49,14 +53,18 @@
             .hero-align-left & {
                 margin : auto auto 6rem auto;
             }
+
+            .home & {
+                margin-bottom: 20vh;
+            }
         }
 
         &-heading {
             color          : rgba(255, 255, 255, 0.85);
             font-family    : Copperplate, serif;
-            font-size      : 9rem;
+            font-size      : 6rem;
             font-weight    : 500;
-            line-height    : 7rem;
+            line-height    : 4.7rem;
             margin         : auto;
             max-width      : 600px;
             opacity        : 0;
@@ -64,6 +72,11 @@
             text-transform : uppercase;
             transform      : translateY(-2rem);
             z-index        : 1;
+
+            @include screen-md-lg-xl {
+                font-size   : 9rem;
+                line-height : 7rem;
+            }
 
             .hero-align-left & {
                 text-align : left;

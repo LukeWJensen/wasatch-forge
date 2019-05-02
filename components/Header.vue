@@ -25,7 +25,7 @@
 <script>
     import Nav from '~/components/nav/Nav'
     import NavDrawer from '~/components/nav/NavDrawer'
-    import Logo from'~/components/Logo'
+    import Logo from '~/components/Logo'
 
     export default {
         name: 'Header',
@@ -51,28 +51,49 @@
 
     .main-header {
         background : $color-off-white;
-        height     : $header-height;
+        height     : $header-height-mobile;
         position   : relative;
+        width      : 100%;
         z-index    : 1;
+
+        @include screen-xs-sm {
+            position : fixed;
+            left     : 0;
+            top      : 0;
+        }
+
+        @include screen-md-lg-xl {
+            height : $header-height-desk;
+        }
 
         &-inner {
             display         : flex;
             align-items     : center;
             height          : 100%;
             justify-content : space-between;
+            padding         : 0 3rem;
             position        : relative;
         }
     }
 
     .header-logo {
-        position  : absolute;
-        left      : 50%;
-        top       : 50%;
-        transform : translate(-50%, -50%);
+        position : relative;
+        top      : 0.4rem;
+
+        @include screen-md-lg-xl {
+            left      : 50%;
+            position  : absolute;
+            top       : 50%;
+            transform : translate(-50%, -50%);
+        }
 
         .logo-svg {
-            width   : 9rem;
             display : inline-flex;
+            width   : 6.4rem;
+
+            @include screen-md-lg-xl {
+                width : 9rem;
+            }
         }
     }
 
@@ -81,7 +102,7 @@
         border             : 0;
         display            : flex;
         flex-direction     : column;
-        height             : 3rem;
+        height             : 3.2rem;
         justify-content    : space-between;
         outline            : none;
         padding            : 0;
@@ -90,8 +111,8 @@
         &-line {
             background : $color-off-black;
             display    : inline-flex;
-            height     : 0.5rem;
-            width      : 3.6rem;
+            height     : 0.6rem;
+            width      : 4rem;
         }
     }
 </style>

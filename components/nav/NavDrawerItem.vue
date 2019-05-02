@@ -38,5 +38,13 @@
             display : block;
             padding : 0.6rem 0;
         }
+
+        &-text {
+            padding: 0.4rem 0;
+
+            .nav-drawer-subnav & {
+                padding: 0;
+            }
+        }
     }
 </style>
