@@ -5,11 +5,12 @@
         </Hero>
         <div class="container">
             <div class="page-content">
+
                 <section class="blacksmith-row row">
-                    <div class="col-4 blacksmith-img">
-                        <BackgroundImage :img-src="mattImgSrc"/>
+                    <div class="col-4 blacksmith-img d-flex flex-column justify-content-center">
+                        <img :src="require('~/assets/images/blacksmiths/matt.jpg')">
                     </div>
-                    <div class="col-8 blacksmith-bio">
+                    <div class="col-8 blacksmith-bio d-flex flex-column justify-content-center">
                         <h2 class="blacksmith-name">Matt Danielson</h2>
                         <div class="text-two-col">
                             <p>When you close your eyes and picture a blacksmith, you're probably already seeing Matt. He's a bear of a blacksmith who makes our biggest anvil look small.</p>
@@ -20,8 +21,26 @@
                         </div>
                     </div>
                 </section>
+
                 <section class="blacksmith-row row">
-                    <div class="col-8 blacksmith-bio">
+                    <div class="col-8 blacksmith-bio d-flex flex-column justify-content-center">
+                        <h2 class="blacksmith-name">Walter Enoch Elieson</h2>
+                        <div class="text-two-col">
+                            <p>Enoch is a co-owner of Wasatch Forge and works as an event planning coordinator and member of the design team.</p>
+                            <p>He is a veteran of the Unites States Marine Corps, where he served for 17 years and received numerous awards and recognitions. Much of his military career was spent designing equipment and executing training tactics. He also worked with foreign and domestic troops in training for combat operations.</p>
+                            <p>When he's not working at the forge, Enoch also enjoys woodworking, historical reenactment, classic cars and four-wheeling.</p>
+                        </div>
+                    </div>
+                    <div class="col-4 blacksmith-img d-flex flex-column justify-content-center">
+                        <img :src="require('~/assets/images/blacksmiths/enoch.jpg')">
+                    </div>
+                </section>
+
+                <section class="blacksmith-row row">
+                    <div class="col-4 blacksmith-img d-flex flex-column justify-content-center">
+                        <img :src="require('~/assets/images/blacksmiths/mike.jpg')">
+                    </div>
+                    <div class="col-8 blacksmith-bio d-flex flex-column justify-content-center">
                         <h2 class="blacksmith-name">Michael Miller-Imperiale</h2>
                         <div class="text-two-col">
                             <p>Mike is a full-time dad and a part-time blacksmith who found smithing when he wanted to fall in love with work that didn't take him away from home as often as his previous career as a wilderness guide. It worked.</p>
@@ -29,10 +48,8 @@
                             <p>Mike is currently working as a ski instructor at Alta. He forges at every opportunity he gets.</p>
                         </div>
                     </div>
-                    <div class="col-4 blacksmith-img">
-                        <BackgroundImage :img-src="mikeImgSrc" align="top"/>
-                    </div>
                 </section>
+
             </div>
         </div>
     </div>
@@ -51,12 +68,6 @@
         computed: {
             heroImgSrc () {
                 return require('~/assets/images/hero/working.jpg')
-            },
-            mattImgSrc () {
-                return require('~/assets/images/blacksmiths/matt.jpg')
-            },
-            mikeImgSrc () {
-                return require('~/assets/images/blacksmiths/mike.jpg')
             }
         }
     }

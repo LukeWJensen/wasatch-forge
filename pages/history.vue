@@ -24,8 +24,7 @@
                             requested items, especially knives. To learn more, check out our
                             <nuxt-link to="/products">
                                 <InlineLink text="products page"/>
-                            </nuxt-link>
-                            .
+                            </nuxt-link>.
                         </p>
                     </div>
                     <div class="text-center history-subscribe-wrap">
