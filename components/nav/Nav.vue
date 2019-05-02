@@ -65,7 +65,6 @@
             background    : $color-molten;
             border-radius : 0.5rem;
             height        : auto;
-            padding       : 1rem 2rem;
             transition    : color 250ms $cubic-in-out, background-color 250ms $cubic-in-out;
             margin-left   : auto;
 
@@ -78,7 +77,8 @@
             }
 
             a.main-nav-link {
-                color : $color-off-white;
+                color   : $color-off-white;
+                padding : 1rem 2rem;
             }
         }
 
