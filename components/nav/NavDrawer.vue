@@ -2,9 +2,9 @@
     <div :class="{'nav-drawer--open': $store.state.nav.drawerOpen}" class="nav-drawer">
         <ul class="nav-drawer-links barlow">
             <NavDrawerItem
+                :highlight="true"
                 text="Book Lessons"
                 to="/book-lessons"
-                highlight
             />
             <NavDrawerSubNav text="About">
                 <NavDrawerItem
@@ -72,6 +72,7 @@
         &-links {
             display        : flex;
             flex-direction : column;
+            padding        : 2rem 0 0 2rem;
         }
 
         &-close {
