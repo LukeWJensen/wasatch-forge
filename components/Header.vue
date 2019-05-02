@@ -106,7 +106,9 @@
         justify-content    : space-between;
         outline            : none;
         padding            : 0;
+        position           : relative;
         -webkit-appearance : none;
+        z-index            : 10;
 
         &-line {
             background : $color-off-black;
