@@ -77,7 +77,7 @@
         }
 
         &-text {
-            padding : 0.4rem 0;
+            padding : 1rem 0;
 
             .nav-drawer-subnav & {
                 padding : 0;
