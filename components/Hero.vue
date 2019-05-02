@@ -79,7 +79,7 @@
             }
 
             body.init .home & {
-                animation : headingEnter 1s $cubic-out 1s forwards;
+                animation : headingEnterDramatic 1s $cubic-out 1s forwards;
             }
         }
     }
