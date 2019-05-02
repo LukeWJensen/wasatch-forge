@@ -1,11 +1,11 @@
 <template>
-    <div class="page-book-lessons">
+    <div class="page-our-history">
         <Hero heading="Our History" align="left">
             <BackgroundImage :img-src="heroImgSrc" :tint="false"/>
         </Hero>
         <div class="container">
             <div class="page-content">
-                <section class="col-10 offset-1">
+                <section class="col-12 col-lg-10 offset-lg-1">
                     <p class="callout">Wasatch Forge was started by four friends who wanted to get out of the shops on the sides of their houses and
                         into a communal&nbsp;workspace.</p>
                     <div class="text-two-col">
@@ -70,12 +70,29 @@
 <style lang="scss">
 @import '../assets/scss/the-goods';
 
+.page-our-history {
+
+    .page-content {
+        @include screen-xs-sm {
+            padding : 0;
+        }
+    }
+}
+
 .history-img {
-    margin: 5.2rem auto 6rem auto;
+    margin: 1.2rem auto 2.8rem auto;
     width: 100%;
+
+    @include screen-md-lg-xl {
+        margin: 5.2rem auto 6rem auto;
+    }
 }
 
 .history-subscribe-wrap {
-    margin: 4rem 0 0 0;
+    margin: 4rem 0 5rem 0;
+
+    @include screen-md-lg-xl {
+        margin: 4rem 0 0 0;
+    }
 }
 </style>

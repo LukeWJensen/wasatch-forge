@@ -83,7 +83,9 @@
     .page-blacksmiths {
 
         .page-content {
-            padding: 0;
+            @include screen-xs-sm {
+                padding : 0;
+            }
         }
     }
 
