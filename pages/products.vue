@@ -1,17 +1,17 @@
 <template>
     <div class="page-book-lessons">
         <Hero heading="Products" align="left">
-            <BackgroundImage :img-src="heroImgSrc" :tint="true" />
+            <BackgroundImage :img-src="heroImgSrc" :tint="true"/>
         </Hero>
         <div class="container">
             <div class="page-content">
 
                 <p class="callout">Our online store is a work in progress, so please check back for updates or visit our
                     <nuxt-link to="/contact">
-                        <InlineLink text="contact page" />
+                        <InlineLink text="contact page"/>
                     </nuxt-link>
                     for ways to stay informed. If you'd like to place an order, please <a target="_blank" href="mailto:wasatchforge@gmail.com">
-                        <InlineLink text="send us an email" />
+                        <InlineLink text="send us an email"/>
                     </a> with a description of your desired purchase and we will get in touch with you as quickly as possible!
                 </p>
 
@@ -100,25 +100,49 @@
 </script>
 
 <style lang="scss">
-@import '../assets/scss/the-goods';
+    @import '../assets/scss/the-goods';
 
-.product-row {
-    margin-bottom : 6rem;
-}
+    .product-row {
+        @include screen-md-lg-xl {
+            margin-bottom : 6rem;
+        }
 
-.product-img {
-    overflow   : hidden;
-    margin     : 0 0 1.2rem 0;
-    max-height : 26rem;
+        &:last-of-type {
 
-    img {
-        width : 100%;
+            .product-col {
 
-        @supports (object-fit: cover) {
-            height          : 26rem;
-            object-fit      : cover;
-            object-position : center;
+                &:last-of-type {
+                    margin-bottom : 0;
+                }
+            }
         }
     }
-}
+
+    .product-col {
+        margin-bottom: 6rem;
+
+        @include screen-md-lg-xl {
+            margin-bottom: 0;
+        }
+    }
+
+    .product-img {
+        overflow   : hidden;
+        margin     : 0 0 1.2rem 0;
+        max-height : 20rem;
+
+        @include screen-md-lg-xl {
+            max-height : 26rem;
+        }
+
+        img {
+            width : 100%;
+
+            @supports (object-fit: cover) {
+                height          : 26rem;
+                object-fit      : cover;
+                object-position : center;
+            }
+        }
+    }
 </style>

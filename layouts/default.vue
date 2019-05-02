@@ -50,7 +50,11 @@
 
         p:not(.callout),
         ul {
-            margin : 0 0 2.4rem 0;
+            margin : 0 0 1.8rem 0;
+
+            @include screen-md-lg-xl {
+                margin : 0 0 2.4rem 0;
+            }
         }
     }
 </style>
