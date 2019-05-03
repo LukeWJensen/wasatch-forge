@@ -6,7 +6,7 @@
             <div class="main-content">
                 <nuxt/>
             </div>
-            <Modal/>
+            <ModalBg/>
             <Footer/>
         </div>
     </div>
@@ -17,10 +17,10 @@
     import NavDrawer from '~/components/nav/NavDrawer'
     import Header from '~/components/Header'
     import Footer from '~/components/Footer'
-    import Modal from '~/components/Modal'
+    import ModalBg from '~/components/ModalBg'
 
     export default {
-        components: { Header, NavDrawer, Footer, Modal },
+        components: { Header, NavDrawer, Footer, ModalBg },
         mixins: [ LayoutsMixin ]
     }
 </script>
@@ -31,7 +31,5 @@
         min-height: 100vh;
     }
 
-    .main-content {
-        min-height: calc(100vh - #{$header-height} - #{$footer-height});
-    }
+    .main-content {}
 </style>

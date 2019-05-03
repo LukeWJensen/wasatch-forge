@@ -1,0 +1,52 @@
+@import "../the-goods";
+
+.cta,
+a.cta {
+    border         : 0;
+    border-radius  : 0.5rem;
+    display        : inline-block;
+    font-size      : 1.6rem;
+    letter-spacing : 0.05em;
+    line-height    : 1.4;
+    margin         : 1rem 0;
+    outline        : none;
+    padding        : 1rem 2rem;
+    text-transform : uppercase;
+    transition     : color 250ms $cubic-out, background-color 250ms $cubic-out;
+
+    &--highlight {
+        background-color : $color-molten;
+        color            : white;
+
+        a {
+            color : white;
+        }
+
+        &:hover {
+            background-color : $color-off-black;
+        }
+    }
+}
+
+input[type=submit] {
+
+    &:hover {
+        cursor : pointer;
+    }
+}
+
+.close-btn {
+    align-items      : center;
+    background-color : white;
+    border           : solid 1px #e1e1e1;
+    border-radius    : 2rem;
+    display          : flex;
+    justify-content  : center;
+    height           : 4rem;
+    transition       : border-color 250ms $cubic-out;
+    width            : 4rem;
+
+    &:hover {
+        border-color : $color-off-black;
+    }
+}

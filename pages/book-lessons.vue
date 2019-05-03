@@ -1,23 +1,39 @@
 <template>
-    <div class="container">
-        <Hero :img-src="heroImgSrc"/>
-        <div class="page-content">
-            <h2>Stuff goes here</h2>
+    <div class="page-book-lessons">
+        <Hero heading="Book Lessons" align="left">
+            <BackgroundImage
+                :img-src="heroImgSrc"
+                :tint="true"
+            />
+        </Hero>
+        <div class="container">
+            <div class="page-content">
+                <div class="acuity-scheduler">
+                    <iframe
+                        src="https://app.acuityscheduling.com/schedule.php?owner=13188978"
+                        width="100%"
+                        height="800"
+                        frameBorder="0"
+                    />
+                    <script src="https://d3gxy7nm8y4yjr.cloudfront.net/js/embed.js" type="text/javascript"/>
+                </div>
+            </div>
         </div>
     </div>
 </template>
 
 <script>
     import Hero from '~/components/Hero'
+    import BackgroundImage from '~/components/BackgroundImage'
 
     export default {
-        components: { Hero },
+        components: { Hero, BackgroundImage },
         data () {
             return {}
         },
         computed: {
             heroImgSrc () {
-                return require('~/assets/images/hero/shop.jpg')
+                return require('~/assets/images/hero/class.jpg')
             }
         }
     }
@@ -26,12 +42,8 @@
 <style lang="scss">
     @import '../assets/scss/the-goods';
 
-    .page-content {
-        margin     : 25vh auto 0 auto;
-        position   : relative;
-        background : $color-bg-light;
-        min-height: 60vh;
-        padding    : 5.5rem 10rem;
-        z-index    : 1;
+    .acuity-scheduler {
+        max-width : 840px;
+        margin    : 0 auto;
     }
 </style>

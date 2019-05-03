@@ -2,18 +2,22 @@
     <div :class="{'nav-drawer--open': $store.state.nav.drawerOpen}" class="nav-drawer">
         <ul class="nav-drawer-links barlow">
             <NavDrawerItem
+                :highlight="true"
                 text="Book Lessons"
                 to="/book-lessons"
-                highlight
             />
             <NavDrawerSubNav text="About">
                 <NavDrawerItem
-                    text="Our History"
-                    to="/history"
+                    text="The Shop"
+                    to="/shop"
                 />
                 <NavDrawerItem
                     text="The Blacksmiths"
                     to="/blacksmiths"
+                />
+                <NavDrawerItem
+                    text="Our History"
+                    to="/history"
                 />
             </NavDrawerSubNav>
             <NavDrawerItem text="Products" to="/products"/>
@@ -50,7 +54,7 @@
     @import "../../assets/scss/the-goods";
 
     .nav-drawer {
-        background : $color-text-light;
+        background : $color-off-white;
         height     : 100vh;
         padding    : 4.6rem 2.8rem;
         position   : fixed;
@@ -58,8 +62,8 @@
         top        : 0;
         transform  : translateX(101%);
         transition : transform 250ms $cubic-out;
-        width      : 35rem;
-        z-index    : 3;
+        width      : 32rem;
+        z-index    : 6;
 
         &--open {
             transform : translateX(0);
@@ -68,24 +72,24 @@
         &-links {
             display        : flex;
             flex-direction : column;
+            padding        : 2rem 0 0 2rem;
         }
 
         &-close {
-            background  : transparent;
-            border      : none;
-            color       : transparent;
-            font-size   : 1.4rem;
-            height      : 2rem;
-            overflow    : hidden;
-            padding     : 0;
-            position    : absolute;
-            right       : 1.6rem;
-            text-indent : 1.6rem;
-            top         : 1.6rem;
-            width       : 2rem;
+            background : transparent;
+            border     : none;
+            color      : transparent;
+            font-size  : 1.4rem;
+            height     : 2.6rem;
+            overflow   : hidden;
+            padding    : 0;
+            position   : absolute;
+            right      : 3.4rem;
+            top        : 3rem;
+            width      : 2.6rem;
 
             &:before, &:after {
-                background : $color-text-main;
+                background : $color-off-black;
                 content    : '';
                 height     : 100%;
                 left       : 50%;

@@ -1,17 +1,18 @@
 <template>
     <nav class="main-nav">
         <ul class="main-nav-links barlow">
+            <SubNav text="About">
+                <SubNavItem text="The Shop" to="/shop"/>
+                <SubNavItem text="The Blacksmiths" to="/blacksmiths"/>
+                <SubNavItem text="Our History" to="/history"/>
+            </SubNav>
+            <NavItem text="Products" to="/products"/>
+            <NavItem text="Contact" to="/contact"/>
             <NavItem
                 text="Book Lessons"
                 to="/book-lessons"
                 highlight
             />
-            <SubNav text="About">
-                <SubNavItem text="Our History" to="/history"/>
-                <SubNavItem text="The Blacksmiths" to="/blacksmiths"/>
-            </SubNav>
-            <NavItem text="Products" to="/products"/>
-            <NavItem text="Contact" to="/contact"/>
         </ul>
     </nav>
 </template>
@@ -26,14 +27,6 @@
         components: { NavItem, SubNav, SubNavItem },
         data () {
             return {}
-        },
-        methods: {
-            handleMouseOver (e) {
-                console.log(e.target)
-            },
-            handleMouseLeave (e) {
-                console.log(e.target)
-            }
         }
     }
 </script>
@@ -41,35 +34,51 @@
 <style lang="scss">
     @import "../../assets/scss/the-goods";
 
-    .main-nav {}
+    .main-nav {
+        width : 100%;
+    }
 
     .main-nav-links {
-        display : flex;
+        align-items : center;
+        display     : flex;
+        margin      : 0;
+        padding     : 0;
     }
 
     .main-nav-item {
-        color          : $color-text-light;
+        align-items    : center;
+        color          : $color-off-black;
+        display        : flex;
         list-style     : none;
-        font-size      : 2rem;
+        font-size      : 1.6rem;
         font-weight    : 700;
-        padding        : 0.5rem 0;
+        height         : 3.6rem;
         position       : relative;
-        margin         : 1.5rem 1.5rem 0 2.5rem;
+        margin         : 0 1.5rem 0 2.5rem;
         text-transform : uppercase;
+
+        &--subnav {
+            margin-right : 2.5rem;
+        }
 
         &--highlight {
             background    : $color-molten;
-            border-radius : 0.2rem;
-            padding       : 0.4rem 1rem 0.6rem 1rem;
+            border-radius : 0.5rem;
+            height        : auto;
             transition    : color 250ms $cubic-in-out, background-color 250ms $cubic-in-out;
+            margin-left   : auto;
 
             &:hover {
-                background-color : $color-text-light;
-                color            : $color-text-main;
+                background-color : $color-off-black;
 
                 a {
-                    color : $color-text-main;
+                    color : $color-off-black;
                 }
+            }
+
+            a.main-nav-link {
+                color   : $color-off-white;
+                padding : 1rem 2rem;
             }
         }
 
@@ -135,7 +144,8 @@
         }
 
         a {
-            color : $color-text-light;
+            color   : $color-off-black;
+            padding : 0.5rem 0;
 
             &:hover {
                 text-decoration : none;

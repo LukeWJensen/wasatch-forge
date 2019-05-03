@@ -7,3 +7,15 @@
 .fade-enter, .fade-leave-to {
     opacity : 0;
 }
+
+.page-enter-active, .layout-enter-active {
+    transition: opacity .8s $cubic-out, transform .8s $cubic-out;
+}
+
+.page-leave-active, .layout-leave-active {
+    transition: opacity .3s $cubic-out, transform .3s $cubic-out;
+}
+.page-enter, .page-leave-active,
+.layout-enter, .layout-leave-active {
+    opacity: 0;
+}
