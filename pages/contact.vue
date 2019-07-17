@@ -9,8 +9,8 @@
                     <div class="col-12 col-lg-5 contact-info">
                         <div class="contact-item">
                             <span class="contact-item-label">Phone:</span>
-                            <a target="_blank" href="tel:801-808-2897">
-                                <span>801-613-0593</span>
+                            <a target="_blank" href="tel:385-528-2687">
+                                <span>385-528-2687</span>
                             </a>
                         </div>
 

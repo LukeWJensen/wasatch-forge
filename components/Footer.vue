@@ -18,9 +18,9 @@
                 <a
                     class="main-footer-phone"
                     target="_blank"
-                    href="tel:801-808-2897"
+                    href="tel:385-528-2687"
                 >
-                    <span>801-613-0593</span>
+                    <span>385-528-2687</span>
                 </a>
                 <span class="main-footer-middot">&middot;</span>
                 <a
