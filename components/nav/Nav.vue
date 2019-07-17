@@ -61,6 +61,12 @@
           margin-left : 0;
         }
 
+        &--active {
+          cursor         : auto;
+          opacity        : 0.4 !important;
+          pointer-events : none;
+        }
+
         &--subnav {
             margin-right : 2.5rem;
         }
@@ -83,6 +89,11 @@
             a.main-nav-link {
                 color   : $color-off-white;
                 padding : 1rem 2rem;
+            }
+
+            &.main-nav-item--active {
+              background : $color-off-black;
+              opacity    : 1 !important;
             }
         }
 

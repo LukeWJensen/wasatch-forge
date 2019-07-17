@@ -5,7 +5,8 @@
             {'main-nav-item--highlight': highlight},
             {'main-nav-item--hovering': hovering},
             {'main-nav-item--hovered': hovered},
-            {'main-nav-item--hovered': hovered}
+            {'main-nav-item--hovered': hovered},
+            {'main-nav-item--active': isActive}
         ]"
         class="main-nav-item"
         @mouseover="handleMouseOver"
@@ -34,6 +35,15 @@
                 hovering: false,
                 hovered: false
             }
+        },
+        computed: {
+          slug () {
+              const slug = this.to.split('/')
+              return slug.length >= 1 ? slug[1] : ''
+          },
+          isActive () {
+              return this.$route.name === this.slug
+          }
         }
     }
 </script>
