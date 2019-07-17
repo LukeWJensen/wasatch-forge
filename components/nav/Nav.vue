@@ -57,6 +57,10 @@
         margin         : 0 1.5rem 0 2.5rem;
         text-transform : uppercase;
 
+        &:first-of-type {
+          margin-left : 0;
+        }
+
         &--subnav {
             margin-right : 2.5rem;
         }

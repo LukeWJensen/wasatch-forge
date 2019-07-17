@@ -71,8 +71,11 @@
             align-items     : center;
             height          : 100%;
             justify-content : space-between;
-            padding         : 0 3rem;
             position        : relative;
+
+            @include screen-xs-sm {
+              padding : 0 3rem;
+            }
         }
     }
 

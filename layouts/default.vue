@@ -28,11 +28,11 @@
 
     .page-container {
         background : $color-off-white;
-        min-height : 100vh;
-
-        @include screen-xs-sm {
-            margin-top : $header-height-mobile;
-        }
+        height : 100vh;
+        overflow-x: hidden;
+        overflow-y: auto;
+        position: relative;
+        perspective: 1px;
     }
 
     .page-content {

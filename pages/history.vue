@@ -1,7 +1,7 @@
 <template>
     <div class="page-our-history">
         <Hero heading="Our History" align="left">
-            <BackgroundImage :img-src="heroImgSrc" :tint="false"/>
+            <BackgroundImage :img-src="heroImgSrc" :tint="true"/>
         </Hero>
         <div class="container">
             <div class="page-content">
@@ -76,6 +76,21 @@
         @include screen-xs-sm {
             padding : 0;
         }
+    }
+
+    .background-image-img {
+
+      @include screen-md {
+        top: -215%;
+      }
+
+      @include screen-lg {
+        top: -135%;
+      }
+
+      @include screen-xl {
+        top: -75%;
+      }
     }
 }
 

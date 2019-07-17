@@ -28,10 +28,14 @@
         justify-content : center;
         overflow        : hidden;
         position        : relative;
-        height          : 35vh;
+        height          : 25rem;
+
+        @include screen-xs-sm {
+            margin-top : $header-height-mobile;
+        }
 
         @include screen-md-lg-xl {
-            height : 65vh;
+            height : 36vw;
         }
 
         .home & {
@@ -61,8 +65,8 @@
             .hero-align-left & {
                 margin : auto auto 3rem auto;
 
-                @include screen-md-lg-xl {
-                    margin : auto auto 6rem auto;
+                @include screen-lg-xl {
+                    margin : auto auto 7rem auto;
                 }
             }
 
@@ -77,9 +81,11 @@
             font-size      : 4.2rem;
             font-weight    : 500;
             line-height    : 3.4rem;
+            left           : -0.5rem;
             margin         : auto;
             max-width      : 600px;
             opacity        : 0;
+            position       : relative;
             text-align     : center;
             text-transform : uppercase;
             transform      : translateY(-2rem);
