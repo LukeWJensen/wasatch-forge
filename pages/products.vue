@@ -1,5 +1,5 @@
 <template>
-    <div class="page-book-lessons">
+    <div class="page-products">
         <Hero heading="Products" align="left">
             <BackgroundImage :img-src="heroImgSrc" :tint="true"/>
         </Hero>
