@@ -29,10 +29,16 @@
     .page-container {
         background : $color-off-white;
         height : 100vh;
+        min-height : 100vh;
         overflow-x: hidden;
         overflow-y: auto;
         position: relative;
         perspective: 1px;
+        -webkit-overflow-scrolling: touch;
+
+        .ios & {
+          height: auto;
+        }
     }
 
     .page-content {

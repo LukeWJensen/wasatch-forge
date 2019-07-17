@@ -24,6 +24,10 @@ export default async function ({ app }) {
             }
         },
         mounted () {
+            if((/iPhone|iPad|iPod/i.test(navigator.userAgent))) {
+              document.body.classList.add('ios')
+            }
+
             this.setDeviceSize()
 
             this.resizeCompleteEvent = new CustomEvent('resizeComplete', e => { process(e.detail) })
