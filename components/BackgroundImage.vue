@@ -36,11 +36,15 @@
     .background-image {
         transform : translateZ(-2px) scale(3);
 
-        .ios & {
+        body.ios & {
             position: fixed;
             transform : none;
             top: $header-height-mobile;
             z-index: 0;
+        }
+
+        body.edge & {
+            transform : none;
         }
 
         &-img {

@@ -1,7 +1,7 @@
 <template>
     <div :class="align ? `hero-align-${align}` : ''" class="hero">
         <div class="hero-heading-wrap container">
-            <h1 class="hero-heading">{{ heading }}</h1>
+            <h1 class="hero-heading copperplate">{{ heading }}</h1>
         </div>
         <slot/>
     </div>
@@ -77,7 +77,6 @@
 
         &-heading {
             color          : rgba(255, 255, 255, 0.85);
-            font-family    : Copperplate, serif;
             font-size      : 4.2rem;
             font-weight    : 500;
             line-height    : 3.4rem;
