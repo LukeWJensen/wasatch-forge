@@ -24,7 +24,7 @@
 
     export default {
         name: 'NavItem',
-        mixins: [ NavItemMixin ],
+        mixins: [NavItemMixin],
         props: {
             text: String,
             to: String,
@@ -37,13 +37,13 @@
             }
         },
         computed: {
-          slug () {
-              const slug = this.to.split('/')
-              return slug.length >= 1 ? slug[1] : ''
-          },
-          isActive () {
-              return this.$route.name === this.slug
-          }
+            slug () {
+                const slug = this.to.split('/')
+                return slug.length >= 1 ? slug[1] : ''
+            },
+            isActive () {
+                return this.$route.name === this.slug
+            }
         }
     }
 </script>

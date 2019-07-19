@@ -1,5 +1,5 @@
 <template>
-    <li class="main-nav-subnav-item open-sans" :class="{'main-nav-subnav-item--active': isActive}">
+    <li :class="{'main-nav-subnav-item--active': isActive}" class="main-nav-subnav-item open-sans">
         <nuxt-link :to="to" class="main-nav-subnav-link">{{ text }}</nuxt-link>
     </li>
 </template>
@@ -15,13 +15,13 @@
             return {}
         },
         computed: {
-          slug () {
-              const slug = this.to.split('/')
-              return slug.length >= 1 ? slug[1] : ''
-          },
-          isActive () {
-              return this.$route.name === this.slug
-          }
+            slug () {
+                const slug = this.to.split('/')
+                return slug.length >= 1 ? slug[1] : ''
+            },
+            isActive () {
+                return this.$route.name === this.slug
+            }
         }
     }
 </script>
@@ -36,9 +36,9 @@
         text-transform : capitalize;
 
         &--active {
-          cursor         : auto;
-          opacity        : 0.4 !important;
-          pointer-events : none;
+            cursor         : auto;
+            opacity        : 0.4 !important;
+            pointer-events : none;
         }
 
         .main-nav-subnav-link {
@@ -47,7 +47,7 @@
             padding : 0.2rem 2rem;
 
             &:hover {
-                color: $color-grey;
+                color : $color-grey;
             }
         }
     }

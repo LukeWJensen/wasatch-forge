@@ -52,6 +52,9 @@
         mounted () {
             this.height = this.$refs.li.clientHeight
         },
+        beforeDestroy () {
+            this.$refs.li.removeEventListener('transitionend', this.handleTransitionend)
+        },
         methods: {
             handleMouseOver () {
                 this.hovered = false
