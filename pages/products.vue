@@ -1,10 +1,8 @@
 <template>
     <div class="page-products">
-        <Hero heading="Products" align="left">
-            <BackgroundImage :img-src="heroImgSrc" :tint="true"/>
-        </Hero>
-        <div class="container">
-            <div class="page-content">
+        <Hero heading="Products" align="left"/>
+        <div class="page-content">
+            <div class="container">
 
                 <p class="callout">Our online store is a work in progress, so please check back for updates or visit our
                     <nuxt-link to="/contact">
@@ -90,11 +88,6 @@
         components: { Hero, BackgroundImage, InlineLink },
         data () {
             return {}
-        },
-        computed: {
-            heroImgSrc () {
-                return require('~/assets/images/hero/hooks.jpg')
-            }
         }
     }
 </script>
@@ -112,7 +105,11 @@
             .product-col {
 
                 &:last-of-type {
-                    margin-bottom : 0;
+                    margin-bottom : 4rem;
+
+                    @include screen-md-lg-xl {
+                        margin-bottom: 0;
+                    }
                 }
             }
         }

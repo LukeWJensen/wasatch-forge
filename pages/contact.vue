@@ -1,11 +1,9 @@
 <template>
     <div class="page-book-lessons">
-        <Hero heading="Contact" align="left">
-            <BackgroundImage :img-src="heroImgSrc" :tint="true"/>
-        </Hero>
-        <div class="container">
-            <div class="page-content">
-                <div class="row">
+        <Hero heading="Contact" align="left"/>
+        <div class="page-content">
+            <div class="container">
+                <div class="row contact-row">
                     <div class="col-12 col-lg-5 contact-info">
                         <div class="contact-item">
                             <span class="contact-item-label">Phone:</span>
@@ -89,11 +87,6 @@
                 modalActive: false
             }
         },
-        computed: {
-            heroImgSrc () {
-                return require('~/assets/images/hero/hammer_puck.jpg')
-            }
-        },
         methods: {
             activateSubscribe () {
                 this.modalActive = true
@@ -105,6 +98,14 @@
 
 <style lang="scss">
     @import '../assets/scss/the-goods';
+
+    .contact-row {
+        margin : 4rem auto;
+
+        @include screen-lg-xl {
+            margin : 8rem auto;
+        }
+    }
 
     .contact-info {
         @include screen-xs-sm {

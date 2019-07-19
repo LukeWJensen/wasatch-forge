@@ -1,11 +1,15 @@
 <template>
     <div :class="alignClass" class="background-image absolute-fill">
-        <img
-            :src="imgSrc"
-            alt=""
-            class="background-image-img"
-        >
+        <transition name="background-image-img">
+            <img
+                :src="imgSrc"
+                :key="imgSrc"
+                alt=""
+                class="background-image-img"
+            >
+        </transition>
         <div v-if="tint" class="background-image-tint absolute-fill"/>
+        <div v-else class="background-image-tint--half absolute-fill"/>
     </div>
 </template>
 
@@ -30,32 +34,40 @@
     @import "../assets/scss/_the-goods";
 
     .background-image {
+        transform : translateZ(-2px) scale(3);
+
+        .ios & {
+            position: fixed;
+            transform : none;
+            top: $header-height-mobile;
+            z-index: 0;
+        }
 
         &-img {
-          opacity  : 0;
-          position : relative;
-          top      : -250%;
-          width    : 100%;
+            position : absolute;
+            width    : 100%;
 
-          @include screen-md {
-            top: -125%;
-          }
+            @include screen-xl {
+                top : -5%;
+            }
 
-          @include screen-lg {
-            top: -75%;
-          }
+            &-enter-active,
+            &-leave-active {
+                transition : opacity 1s $cubic-out;
+            }
 
-          @include screen-xl {
-            top: -15%;
-          }
-
-          body.init & {
-            animation : bgImgEnter 0.4s $cubic-out 0.81s forwards;
-          }
+            &-enter,
+            &-leave-to {
+                opacity : 0;
+            }
         }
 
         &-tint {
             background : linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.45) 60%, rgba(0, 0, 0, 0.65) 100%);
+
+            &--half {
+                background : linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0.4) 100%);
+            }
         }
     }
 </style>

@@ -1,10 +1,8 @@
 <template>
     <div class="page-our-history">
-        <Hero heading="Our History" align="left">
-            <BackgroundImage :img-src="heroImgSrc" :tint="true"/>
-        </Hero>
-        <div class="container">
-            <div class="page-content">
+        <Hero heading="Our History" align="left"/>
+        <div class="page-content">
+            <div class="container">
                 <section class="col-12 col-lg-10 offset-lg-1">
                     <p class="callout">Wasatch Forge was started by four friends who wanted to get out of the shops on the sides of their houses and
                         into a communal&nbsp;workspace.</p>
@@ -53,11 +51,6 @@
                 modalActive: false
             }
         },
-        computed: {
-            heroImgSrc () {
-                return require('~/assets/images/hero/forge.jpg')
-            }
-        },
         methods: {
             activateSubscribe () {
                 this.modalActive = true
@@ -71,12 +64,6 @@
 @import '../assets/scss/the-goods';
 
 .page-our-history {
-
-    .page-content {
-        @include screen-xs-sm {
-            padding : 0;
-        }
-    }
 
     .background-image-img {
 

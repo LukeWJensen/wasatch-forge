@@ -1,14 +1,8 @@
 <template>
     <div class="page-blacksmiths">
-        <Hero heading="The Blacksmiths" align="left">
-            <BackgroundImage
-                :img-src="heroImgSrc"
-                :tint="true"
-                align="right"
-            />
-        </Hero>
-        <div class="container">
-            <div class="page-content">
+        <Hero heading="The Blacksmiths" align="left"/>
+        <div class="page-content">
+            <div class="container">
 
                 <section class="blacksmith-row row">
                     <div class="col-12 col-md-4 blacksmith-img d-flex flex-column justify-content-center">
@@ -68,11 +62,6 @@
         components: { Hero, BackgroundImage, InlineLink },
         data () {
             return {}
-        },
-        computed: {
-            heroImgSrc () {
-                return require('~/assets/images/hero/working.jpg')
-            }
         }
     }
 </script>
@@ -80,20 +69,11 @@
 <style lang="scss">
     @import '../assets/scss/the-goods';
 
-    .page-blacksmiths {
-
-        .page-content {
-            @include screen-xs-sm {
-                padding : 0;
-            }
-        }
-    }
-
     .blacksmith-row {
-        margin : 0 auto 4rem auto;
+        margin : 4rem auto;
 
         @include screen-lg-xl {
-            margin : 0 auto 8rem auto;
+            margin : 8rem auto;
         }
 
         &:first-child {

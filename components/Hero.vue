@@ -28,7 +28,7 @@
         justify-content : center;
         overflow        : hidden;
         position        : relative;
-        height          : 25rem;
+        height          : 60vw;
 
         @include screen-xs-sm {
             margin-top : $header-height-mobile;
@@ -106,7 +106,7 @@
             }
 
             body.init & {
-                animation : headingEnter 0.7s $cubic-out 0.2s forwards;
+                animation : headingEnter 0.7s $cubic-out 0.4s forwards;
             }
 
             body.init .home & {

@@ -9,13 +9,24 @@
 }
 
 .page-enter-active, .layout-enter-active {
-    transition: opacity .8s $cubic-out;
+    transition: opacity .3s $cubic-out, transform 0.6s $cubic-out;
 }
 
 .page-leave-active, .layout-leave-active {
-    transition: opacity .3s $cubic-out;
+    transition: opacity .3s $cubic-out, transform 0.6s $cubic-out;
 }
-.page-enter, .page-leave-active,
+.page-enter, .page-leave-active {
+    opacity: 0;
+    transform: translateY(30px);
+}
+.page-enter, .page-leave-active {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.layout-enter, .layout-leave-active {
+    opacity: 0;
+}
 .layout-enter, .layout-leave-active {
     opacity: 0;
 }

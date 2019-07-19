@@ -1,10 +1,8 @@
 <template>
     <div class="page-book-lessons">
-        <Hero heading="The Shop" align="left">
-            <BackgroundImage :img-src="heroImgSrc" :tint="true"/>
-        </Hero>
-        <div class="container">
-            <div class="page-content">
+        <Hero heading="The Shop" align="left"/>
+        <div class="page-content">
+            <div class="container">
 
                 <div class="col-12">
                     <p class="callout">Wasatch Forge provides a workspace and a large variety of tools for all types of blacksmiths, regardless of skill or commitment&nbsp;level.</p>
@@ -65,11 +63,6 @@
         components: { Hero, BackgroundImage },
         data () {
             return {}
-        },
-        computed: {
-            heroImgSrc () {
-                return require('~/assets/images/hero/shop.jpg')
-            }
         }
     }
 </script>

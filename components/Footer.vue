@@ -84,6 +84,7 @@
         padding    : 6rem 1.5rem 5rem 1.5rem;
         position   : relative;
         z-index    : 1;
+        transform: translateZ(0);
 
         @include screen-md-lg-xl {
             padding : 8rem 0 6rem 0;

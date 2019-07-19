@@ -1,13 +1,8 @@
 <template>
     <div class="page-book-lessons">
-        <Hero heading="Book Lessons" align="left">
-            <BackgroundImage
-                :img-src="heroImgSrc"
-                :tint="true"
-            />
-        </Hero>
-        <div class="container">
-            <div class="page-content">
+        <Hero heading="Book Lessons" align="left"/>
+        <div class="page-content">
+            <div class="container">
                 <div class="acuity-scheduler">
                     <iframe
                         src="https://app.acuityscheduling.com/schedule.php?owner=13188978"
@@ -30,11 +25,6 @@
         components: { Hero, BackgroundImage },
         data () {
             return {}
-        },
-        computed: {
-            heroImgSrc () {
-                return require('~/assets/images/hero/class.jpg')
-            }
         }
     }
 </script>
@@ -44,6 +34,10 @@
 
     .acuity-scheduler {
         max-width : 840px;
-        margin    : 0 auto;
+        margin : 4rem auto;
+
+        @include screen-lg-xl {
+            margin : 8rem auto;
+        }
     }
 </style>
