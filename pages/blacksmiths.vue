@@ -1,5 +1,5 @@
 <template>
-    <div class="page-blacksmiths">
+    <div class="page-blacksmiths page">
         <Hero heading="The Blacksmiths" align="left"/>
         <div class="page-content">
             <div class="container">

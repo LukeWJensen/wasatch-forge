@@ -1,5 +1,5 @@
 <template>
-    <div class="page-our-history">
+    <div class="page-our-history page">
         <Hero heading="Our History" align="left"/>
         <div class="page-content">
             <div class="container">
@@ -11,10 +11,11 @@
                             an office and shop space in Walton Park in Salt Lake city, Utah. After Victor and Preston moved on to other pursuits, Mike
                             and Matt continued growing Wasatch Forge through community outreach and lots of hard work.</p>
                         <p>During the winter of 2016, Mike decided to pursue his passion of ski instruction at Alta Ski Resort. Matt now runs the shop
-                            with Walter Enoch Elieson and a couple of dedicated apprentices, Steven Moon and Brenden Cochran. The shop focuses on teaching new blacksmiths and
+                            with Walter Enoch Elieson and a couple of dedicated apprentices, Steven Moon and Brenden Cochran. The shop focuses on
+                            teaching new blacksmiths and
                             spreading the passion for the craft.</p>
                     </div>
-                    <img class="history-img" :src="require('~/assets/images/history/matt_and_mike_wide.jpg')">
+                    <img :src="require('~/assets/images/history/matt_and_mike_wide.jpg')" class="history-img">
                     <div class="text-two-col">
                         <p>The University of Utah sought out Wasatch Forge in 2014, hoping that the forge could offer classes to interested students
                             through their Continuing Education Program.</p>
@@ -22,7 +23,8 @@
                             requested items, especially knives. To learn more, check out our
                             <nuxt-link to="/products">
                                 <InlineLink text="products page"/>
-                            </nuxt-link>.
+                            </nuxt-link>
+                            .
                         </p>
                     </div>
                     <div class="text-center history-subscribe-wrap">
@@ -61,40 +63,40 @@
 </script>
 
 <style lang="scss">
-@import '../assets/scss/the-goods';
+    @import '../assets/scss/the-goods';
 
-.page-our-history {
+    .page-our-history {
 
-    .background-image-img {
+        .background-image-img {
 
-      @include screen-md {
-        top: -215%;
-      }
+            @include screen-md {
+                top : -215%;
+            }
 
-      @include screen-lg {
-        top: -135%;
-      }
+            @include screen-lg {
+                top : -135%;
+            }
 
-      @include screen-xl {
-        top: -75%;
-      }
+            @include screen-xl {
+                top : -75%;
+            }
+        }
     }
-}
 
-.history-img {
-    margin: 1.2rem auto 2.8rem auto;
-    width: 100%;
+    .history-img {
+        margin : 1.2rem auto 2.8rem auto;
+        width  : 100%;
 
-    @include screen-md-lg-xl {
-        margin: 5.2rem auto 6rem auto;
+        @include screen-md-lg-xl {
+            margin : 5.2rem auto 6rem auto;
+        }
     }
-}
 
-.history-subscribe-wrap {
-    margin: 4rem 0 5rem 0;
+    .history-subscribe-wrap {
+        margin : 4rem 0 5rem 0;
 
-    @include screen-md-lg-xl {
-        margin: 4rem 0 0 0;
+        @include screen-md-lg-xl {
+            margin : 4rem 0 8rem 0;
+        }
     }
-}
 </style>

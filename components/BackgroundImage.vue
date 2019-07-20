@@ -36,6 +36,10 @@
     .background-image {
         transform : translateZ(-2px) scale(3);
 
+        @include screen-xs-sm {
+            top: $header-height-mobile;
+        }
+
         body.ios & {
             position: fixed;
             transform : none;
@@ -43,7 +47,8 @@
             z-index: 0;
         }
 
-        body.edge & {
+        body.edge &,
+        body.msie & {
             transform : none;
         }
 

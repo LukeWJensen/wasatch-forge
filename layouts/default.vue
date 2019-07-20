@@ -7,6 +7,7 @@
                 :img-src="heroImgSrc"
                 :tint="useTint"
             />
+            <div class="bg-img-mask"/>
             <NavDrawer v-if="deviceLargeUp"/>
             <nuxt/>
             <ModalBg/>
@@ -66,7 +67,7 @@
         margin         : 0 auto;
         padding        : 4rem 0;
         position       : relative;
-        z-index        : 1;
+        z-index        : 3;
 
         @include screen-xs-sm {
             padding : 0.1rem 1.5rem;
@@ -83,6 +84,27 @@
             @include screen-md-lg-xl {
                 margin : 0 0 2.4rem 0;
             }
+        }
+    }
+
+    .bg-img-mask {
+        background-color: $color-off-white;
+        height: 80vh;
+        position: absolute;
+        top : calc(#{$header-height-mobile} + 52vw);
+        width: 100%;
+        z-index: 2;
+
+        @include screen-sm {
+            top : calc(#{$header-height-mobile} + 44vw);
+        }
+
+        @include screen-md-lg {
+            top : calc(#{$header-height-desk} + 44vw);
+        }
+
+        @include screen-xl {
+            top : calc(#{$header-height-desk} + 36vw);
         }
     }
 </style>

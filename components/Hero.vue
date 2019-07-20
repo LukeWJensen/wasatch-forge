@@ -28,13 +28,17 @@
         justify-content : center;
         overflow        : hidden;
         position        : relative;
-        height          : 60vw;
+        height          : 52vw;
 
         @include screen-xs-sm {
             margin-top : $header-height-mobile;
         }
 
-        @include screen-md-lg-xl {
+        @include screen-sm-md-lg {
+            height: 44vw;
+        }
+
+        @include screen-xl {
             height : 36vw;
         }
 

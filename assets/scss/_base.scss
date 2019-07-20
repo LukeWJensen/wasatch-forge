@@ -59,6 +59,11 @@ img {
     max-width : 100%;
 }
 
+.page {
+    position: relative;
+    z-index : 3;
+}
+
 p.callout {
     font-size   : 2rem;
     line-height : 1.6;

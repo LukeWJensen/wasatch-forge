@@ -53,8 +53,9 @@
         background : $color-off-white;
         height     : $header-height-mobile;
         position   : relative;
+        transform  : translateZ(0);
         width      : 100%;
-        z-index    : 5;
+        z-index    : 6;
 
         @include screen-xs-sm {
             position : fixed;
@@ -74,7 +75,7 @@
             position        : relative;
 
             @include screen-xs-sm {
-              padding : 0 3rem;
+                padding : 0 3rem;
             }
         }
     }

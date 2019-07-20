@@ -1,5 +1,5 @@
 <template>
-    <div class="page-products">
+    <div class="page-products page">
         <Hero heading="Products" align="left"/>
         <div class="page-content">
             <div class="container">

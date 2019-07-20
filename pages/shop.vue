@@ -1,5 +1,5 @@
 <template>
-    <div class="page-book-lessons">
+    <div class="page-book-lessons page">
         <Hero heading="The Shop" align="left"/>
         <div class="page-content">
             <div class="container">
