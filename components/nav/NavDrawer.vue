@@ -63,7 +63,7 @@
         transform  : translateX(101%);
         transition : transform 250ms $cubic-out;
         width      : 32rem;
-        z-index    : 6;
+        z-index    : 7;
 
         &--open {
             transform : translateX(0);

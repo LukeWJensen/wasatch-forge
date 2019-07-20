@@ -3,7 +3,7 @@
         <Hero heading="Book Lessons" align="left"/>
         <div class="page-content">
             <div class="container">
-                <div class="acuity-scheduler">
+                <div :class="{'pointer-events-none': $store.state.nav.drawerOpen}" class="acuity-scheduler">
                     <iframe
                         src="https://app.acuityscheduling.com/schedule.php?owner=13188978"
                         width="100%"
@@ -25,6 +25,16 @@
         components: { Hero, BackgroundImage },
         data () {
             return {}
+        },
+        beforeDestroy () {
+            window.removeEventListener('touchstart', this.doNothing)
+        },
+        mounted () {
+            window.addEventListener('touchstart', this.doNothing = () => {
+                // I do nothing, but I am very important.
+                // I keep the Acuity iframe from trapping all the click events.
+                // For some reason.
+            })
         }
     }
 </script>

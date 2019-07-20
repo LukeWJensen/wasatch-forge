@@ -41,11 +41,6 @@
 <style lang="scss">
     @import '../assets/scss/the-goods';
 
-    .ios #app {
-        /*overflow-y: scroll;*/
-        /*-webkit-overflow-scrolling: touch;*/
-    }
-
     .page-container {
         background                 : $color-off-white;
         height                     : 100vh;
@@ -54,7 +49,7 @@
         position                   : relative;
         perspective                : 1px;
 
-        .ios & {
+        body.ios & {
             height : auto;
         }
     }

@@ -35,7 +35,7 @@
 
 .modal-bg {
     background : rgba(0, 0, 0, 0.8);
-    z-index    : 5;
+    z-index    : 6;
 }
 
 </style>
