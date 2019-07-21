@@ -52,7 +52,7 @@
                                 <!-- eslint-enable -->
                             </a>
                         </div>
-                        <button class="cta cta--highlight" @click="activateSubscribe">Subscribe To Our Newsletter</button>
+                        <button class="cta cta--highlight" @click="activateModal">Subscribe To Our Newsletter</button>
                     </div>
                     <div class="col-12 col-lg-7 contact-map">
                         <!-- eslint-disable -->
@@ -68,29 +68,24 @@
                 </div>
             </div>
         </div>
-        <ModalContent v-show="modalActive">
-            <SubscribeForm/>
-        </ModalContent>
     </div>
 </template>
 
 <script>
     import Hero from '~/components/Hero'
     import BackgroundImage from '~/components/BackgroundImage'
-    import ModalContent from '~/components/ModalContent'
-    import SubscribeForm from '~/components/SubscribeForm'
 
     export default {
-        components: { Hero, BackgroundImage, ModalContent, SubscribeForm },
+        components: { Hero, BackgroundImage },
         data () {
             return {
                 modalActive: false
             }
         },
         methods: {
-            activateSubscribe () {
-                this.modalActive = true
+            activateModal () {
                 this.$store.commit('modal/setActive', true)
+                this.$store.commit('modal/setSubscribeActive', true)
             }
         }
     }

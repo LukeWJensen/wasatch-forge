@@ -54,7 +54,7 @@
                 this.formSubmitted = true
             },
             handleClose () {
-                this.$store.commit('modal/setActive', false)
+                this.$store.dispatch('modal/clearModal')
             }
         }
     }

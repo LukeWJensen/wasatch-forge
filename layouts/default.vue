@@ -8,11 +8,12 @@
                 :tint="useTint"
             />
             <div class="bg-img-mask"/>
-            <NavDrawer v-if="deviceLargeUp"/>
             <nuxt/>
-            <ModalBg/>
             <Footer/>
         </div>
+        <ModalBg/>
+        <ModalContent v-show="$store.state.modal.active && !$store.state.nav.drawerOpen"/>
+        <NavDrawer v-if="deviceLargeUp"/>
     </div>
 </template>
 
@@ -22,10 +23,11 @@
     import BackgroundImage from '~/components/BackgroundImage'
     import NavDrawer from '~/components/nav/NavDrawer'
     import Footer from '~/components/Footer'
+    import ModalContent from '~/components/ModalContent'
     import ModalBg from '~/components/ModalBg'
 
     export default {
-        components: { Header, BackgroundImage, NavDrawer, Footer, ModalBg },
+        components: { Header, BackgroundImage, NavDrawer, Footer, ModalContent, ModalBg },
         mixins: [LayoutsMixin],
         computed: {
             heroImgSrc () {

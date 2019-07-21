@@ -1,13 +1,15 @@
 <template>
     <transition name="fade">
-        <div v-show="$store.state.modal.active && !$store.state.nav.drawerOpen" class="modal-content fixed-center">
-            <slot/>
+        <div class="modal-content fixed-center">
+            <SubscribeForm v-if="$store.state.modal.subscribeActive"/>
         </div>
     </transition>
 </template>
 
 <script>
+    import SubscribeForm from '~/components/SubscribeForm'
     export default {
+        components: { SubscribeForm },
         data () {
             return {}
         }
@@ -17,6 +19,6 @@
 <style lang="scss">
 .modal-content {
     position : fixed;
-    z-index  : 6;
+    z-index  : 7;
 }
 </style>

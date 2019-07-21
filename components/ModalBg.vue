@@ -23,7 +23,7 @@
                 if (this.navDrawerOpen) {
                     this.$store.dispatch('nav/setDrawerOpen', false)
                 } else {
-                    this.$store.commit('modal/setActive', false)
+                    this.$store.dispatch('modal/clearModal')
                 }
             }
         }
