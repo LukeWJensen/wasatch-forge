@@ -22,6 +22,36 @@
 
                 <section class="blacksmith-row row">
                     <div class="col-12 col-md-8 blacksmith-bio d-flex flex-column justify-content-center">
+                        <h2 class="blacksmith-name">Steven Moon</h2>
+                        <div class="text-two-col">
+                            <p>Steven is a Journeyman Bladesmith and resident knife specialist at Wasatch Forge.  He has produced dozens of high-quality mono steel and pattern-welded blades and is best know for his drop-point hunting knives.</p>
+                            <p>Steven’s greatest passion is complicated pattern-welded steels. His complex patterning is unrivaled around the forge and he is happy to share his knowledge with students in his Wasatch Forge pattern-welding workshops. He also helps teach the introductory bladesmith class and is responsible for shop upkeep, maintenance, and facilitating new projects for the forge.</p>
+                            <p>Steven was medically retired as a Staff Sergeant from the United States Army where he served honorably for eight years. More than just a craft, smithing is a way of life for him has and has served as an essential therapeutic creative outlet to help treat his service-related disabilities.</p>
+                            <p>A Utah native, Steven lives in Clearfield with his wife, daughter and dogs.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 blacksmith-img d-flex flex-column justify-content-center">
+                        <img :src="require('~/assets/images/blacksmiths/steven.jpg')">
+                    </div>
+                </section>
+
+                <section class="blacksmith-row row">
+                    <div class="col-12 col-md-4 blacksmith-img d-flex flex-column justify-content-center">
+                        <img :src="require('~/assets/images/blacksmiths/lou.jpg')">
+                    </div>
+                    <div class="col-12 col-md-8 blacksmith-bio d-flex flex-column justify-content-center">
+                        <h2 class="blacksmith-name">Lou Dunham</h2>
+                        <div class="text-two-col">
+                            <p>Lou is a full-time artisan craftsperson whose skillset is littered with crafts that fell out of common usage a couple centuries ago. In addition to blacksmithing, these skills include woodworking, wilderness survival, and traditional folk crafts. In his opinion, blacksmithing is a song, where woodworking is a dance. They belong together, and Lou delights in combining his skillsets to produce gorgeous artistic pieces. Though these include knives and swords, he finds traditional smithing more fulfilling than grinder work.</p>
+                            <p>Lou is a theatre major, and it shows. Having grown up more in the mountains and deserts of Utah than in its cities, he is barely civilized and not terribly tame. It has often been remarked that he seems to have walked out of the pages of a fantasy novel.</p>
+                            <p>Lou took one of the earliest Blacksmithing Classes offered by the University of Utah Continuing Education program. After leaving backstage work to care for his grandparents, he has worked continuously at Wasatch Forge ever since.</p>
+                            <p>Outside of the forge, Lou can be found wandering deer-trails in the rockies, howling at the moon, and hosting roleplaying games for groups of friends - occasionally at the same time.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="blacksmith-row row">
+                    <div class="col-12 col-md-8 blacksmith-bio d-flex flex-column justify-content-center">
                         <h2 class="blacksmith-name">Walter Enoch Elieson</h2>
                         <div class="text-two-col">
                             <p>Enoch works as an event planning coordinator and member of the design team.</p>
