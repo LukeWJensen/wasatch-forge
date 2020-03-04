@@ -6,7 +6,7 @@
                 <nuxt-link class="main-footer-nav-link" to="/shop">The Shop</nuxt-link>
                 <nuxt-link class="main-footer-nav-link" to="/blacksmiths">The Blacksmiths</nuxt-link>
                 <nuxt-link class="main-footer-nav-link" to="/history">Our History</nuxt-link>
-                <nuxt-link class="main-footer-nav-link" to="/products">Products</nuxt-link>
+                <nuxt-link class="main-footer-nav-link" to="/store">Store</nuxt-link>
                 <nuxt-link class="main-footer-nav-link" to="/contact">Contact</nuxt-link>
             </nav>
 

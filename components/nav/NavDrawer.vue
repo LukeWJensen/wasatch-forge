@@ -20,7 +20,7 @@
                     to="/history"
                 />
             </NavDrawerSubNav>
-            <NavDrawerItem text="Products" to="/products"/>
+            <NavDrawerItem text="Store" to="/store"/>
             <NavDrawerItem text="Contact" to="/contact"/>
         </ul>
         <button class="nav-drawer-close" @click="handleCloseClick">close menu</button>

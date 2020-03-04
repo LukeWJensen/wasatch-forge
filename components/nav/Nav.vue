@@ -6,7 +6,7 @@
                 <SubNavItem text="The Blacksmiths" to="/blacksmiths"/>
                 <SubNavItem text="Our History" to="/history"/>
             </SubNav>
-            <NavItem text="Products" to="/products"/>
+            <NavItem text="Store" to="/store"/>
             <NavItem text="Contact" to="/contact"/>
             <NavItem
                 text="Book Lessons"
