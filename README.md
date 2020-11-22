@@ -1,6 +1,7 @@
 # wasatch-forge
 
-> Built with Nuxt.js
+- Built with Nuxt.js  
+- Use node v11.15.0!
 
 ## Build Setup
 

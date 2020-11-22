@@ -55,7 +55,7 @@
                         <h2 class="blacksmith-name">Walter Enoch Elieson</h2>
                         <div class="text-two-col">
                             <p>Enoch works as an event planning coordinator and member of the design team.</p>
-                            <p>He is a veteran of the Unites States Marine Corps, where he served for 17 years and received numerous awards and recognitions. Much of his military career was spent designing equipment and executing training tactics. He also worked with foreign and domestic troops in training for combat operations.</p>
+                            <p>He is a veteran of the Unites States Marine Corps, where he served for 17 years and received numerous awards and recognitions. Much of his military career was spent in infantry. He also worked with foreign and domestic troops in training for combat operations.</p>
                             <p>When he's not working at the forge, Enoch also enjoys woodworking, historical reenactment, classic cars and four-wheeling.</p>
                         </div>
                     </div>
